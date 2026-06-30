@@ -1,4 +1,4 @@
-"""Build the ТТ curve dataset (Phase 0) — DANCING_TARAS.md / CLAUDE.md §13.
+"""Build the TT curve dataset (Phase 0) — DANCING_TARAS.md / CLAUDE.md §13.
 
 ONE row per (symbol, scan): MAXIMAL features (561) + the forward price CURVE as a
 multi-output target (vol-normalized cumulative log-return, 1-min grid 1..h_max).
@@ -32,7 +32,7 @@ BINANCE_ERA_START = pd.Timestamp("2025-06-01T00:00:00Z")
 REGISTRY["binance_feature"] = Store(
     "binance_feature", "crypto", "feature", "1m",
     C.ROOT / BINANCE_CANDLES, C.ROOT / "configs" / "binance_train_universe.json",
-    "Binance USDT-M 365d 1m store (ТТ curve dataset).")
+    "Binance USDT-M 365d 1m store (TT curve dataset).")
 HC.STORE_KEY = "binance_feature"
 HC.HC_ERA_START = BINANCE_ERA_START
 
@@ -105,7 +105,7 @@ def main() -> None:
     hold_days_eff = round((data_edge - cutoff).total_seconds() / 86400.0, 2)
     n_nodes = len(STT.target_horizons_tt(a.h_max, a.h_step))
     feat_cols = STT.feature_names_tt(a.n_points, include_regime=with_regime)
-    print(f"ТТ curve dataset -> {a.out_dir}\n"
+    print(f"TT curve dataset -> {a.out_dir}\n"
           f"  store=binance_feature edge={data_edge.isoformat()} "
           f"cutoff={cutoff.isoformat()} (holdout {hold_days_eff}d RESERVED)\n"
           f"  syms={len(syms)} stride={a.stride_min}m(+jitter) days={a.days or 'all'} "

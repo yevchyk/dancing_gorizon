@@ -1,6 +1,6 @@
 {
   "name": "d10 · RAW85",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d10",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "p_dir>=0.85 — якісніший хвіст · авто-генерований макс-оборот білд",
+  "description": "p_dir>=0.85 — cleaner tail · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

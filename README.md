@@ -162,29 +162,125 @@ is **git-ignored**. What ships instead:
 - ✅ the **decision records** in `reports/*.md` (the real story of what we learned)
 - ❌ the full candle store, the big models, logs, `.venv`, and `.env`
 
-You rebuild the data yourself from the exchange APIs (the fetchers are included). It's a
-research engine, not a dataset release.
+The candle store is **rebuilt locally from the exchange public APIs** — the fetchers are
+included, no keys required to download market data. It's a research engine, not a dataset
+release.
 
 ---
 
-## Quickstart
+## Quickstart (runs on the bundled sample, no keys)
 
 ```powershell
 # 1. environment
 python -m venv .venv
 .\.venv\Scripts\pip install -r requirements.txt
 
-# 2. run the main report tool on a date (uses whatever data you have locally)
-.\.venv\Scripts\python -m dh.report.stats --date 2026-06-04 --days 1 --models new,old --slip 0.6
-
-# 3. shadow a live engine (NO real orders — safe to run)
+# 2. shadow a live engine on the sample model — NO real orders, no keys needed.
+#    This loads the bundled model, scores the sample candles, prints any signals.
 .\.venv\Scripts\python -m src.run_hc_live --shadow --once --selection-mode quality `
   --model-dir models\hc_exec_to20260604_prod `
   --stake-margin 5 --leverage 1 --top-per-scan 3 --max-concurrent 6
 ```
 
-To go live you'd create a `.env` with your own exchange keys (see `.env.example`). **Live
-trading is off by default** and self-guards on missing credentials.
+`--shadow` is the default everywhere: it computes and logs signals but **places no
+orders**. A quiet market legitimately produces zero signals — the model only fires on
+high-conviction setups.
+
+---
+
+## The full pipeline (fetch → build → train → evaluate → run)
+
+The bundled sample is just enough to see the machinery move. To do real research you
+rebuild the data and train your own models. Everything runs from the project root via
+`python -m ...`.
+
+### 1. Fetch candles (public data, no keys)
+
+```powershell
+# OKX — one full sweep of the candle store universe, then exit
+.\.venv\Scripts\python -m src.run_fetcher --once --universe store --workers 10
+
+# OKX — rebuild / backfill the separate long-history 200-symbol store
+.\.venv\Scripts\python -m src.run_okx_stable200_build
+.\.venv\Scripts\python -m src.run_okx_stable200_backfill --workers 4 --update
+
+# Binance — the overnight driver chains: candle top-up -> funding history ->
+# honest cost model -> alignment check -> full 365d x 1m dataset -> depth sweep.
+.\.venv\Scripts\python -m src.run_binance_overnight
+```
+
+Candles land under `data/...` (OKX: `data/candles`, Binance: `data/binance*`). Check
+coverage any time with:
+
+```powershell
+.\.venv\Scripts\python -m src.run_data_inventory
+```
+
+### 2. Build a training dataset
+
+Turn raw candles into leak-free feature/label rows (features at `t`, entry at `t+5m`,
+exit at `t+5m+horizon`). The horizon grid is dense by design (train dense, query sparse):
+
+```powershell
+# OKX HC dataset
+.\.venv\Scripts\python -m src.run_hc_dataset
+
+# Binance v5 dataset (dense 30..320 every 5 min). --fresh rebuilds from scratch.
+.\.venv\Scripts\python -m src.run_binance_dataset_v5 --workers 8 --fresh
+```
+
+### 3. Train
+
+Two horizon-conditioned CatBoost models (UP, DOWN), trained up to a **cutoff date** so
+everything after the cutoff is clean out-of-sample. Use `--no-early-stop` on calm windows
+so the model doesn't collapse to three trees:
+
+```powershell
+.\.venv\Scripts\python -m src.run_hc_prod_train --no-early-stop --depth 7 --iterations 6000
+```
+
+The cutoff is `data-edge − HOLDOUT_DAYS`, computed at runtime — the last N days are simply
+held out as the unseen test. There is no frozen/sealed test fixture anywhere in the code.
+
+### 4. Evaluate by calibration (this is the important step)
+
+Look at the **gradators** — realized win-rate and net per probability bucket — on the
+held-out tail. This, not an equity curve, tells you whether the model is real.
+
+```powershell
+# scorecard / calibration on a holdout window (MASK SUMMARY = the gradator table)
+.\.venv\Scripts\python -m src.run_hc_scorecard_analysis --date 2026-06-01 --days 4 --model old
+
+# per-horizon edge / multi-leg / opp-cap profile before wiring any engine
+.\.venv\Scripts\python -m src.run_hc_funnel
+```
+
+### 5. Explore & run
+
+```powershell
+# full stats for a date range (the main report tool)
+.\.venv\Scripts\python -m dh.report.stats --date 2026-06-04 --days 1 --models new,old --slip 0.6
+
+# local web explorer + control panel (localhost only)
+.\.venv\Scripts\python -m dh.webapp.server          # -> http://127.0.0.1:8765
+
+# shadow a single engine (safe) or a portfolio of saved builds as one risk book
+.\.venv\Scripts\python -m src.run_hc_live --shadow --selection-mode bad_day_worker `
+  --model-dir models\hc_exec_to20260604_prod --bdw-raw 0.80 --bdw-opp 0.05
+.\.venv\Scripts\python -m src.run_hc_portfolio_live --portfolio configs\builds\portfolio_5x3.json --shadow
+```
+
+### 6. Going live (optional, at your own risk)
+
+Copy `.env.example` to `.env` and add **your own** exchange keys. Keep `OKX_DEMO=1` while
+testing. Live runners (`--live`) self-guard on missing credentials and should only be used
+after forward-shadow validation. Start small.
+
+```powershell
+.\.venv\Scripts\python -m src.run_hc_live --live --selection-mode bad_day_worker `
+  --model-dir models\hc_exec_to20260604_prod --bdw-raw 0.80 --bdw-opp 0.05 `
+  --stake-margin 5 --leverage 2 --top-per-scan 3 --max-concurrent 6
+```
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "d10 · bdw",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d10",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "p_dir>=0.80 І p_opp<=0.05 — чистий напрямок · авто-генерований макс-оборот білд",
+  "description": "p_dir>=0.80 AND p_opp<=0.05 — clean direction · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

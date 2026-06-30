@@ -1,4 +1,4 @@
-# Zhnyvar (Жнивар) — engine spec & operating manual
+# Zhnyvar (Reaper) — engine spec & operating manual
 
 High-conviction, multi-horizon, risk-unit harvester on the dense-trained model.
 Chosen from the funnel analysis (`src/run_hc_funnel.py`) as the best

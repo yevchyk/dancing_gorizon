@@ -12,8 +12,8 @@
   "builds": [
     {
       "name": "binance d12 short",
-      "folder": "binance перші (06-11)",
-      "sim": "🤫 d8 (екзамен)",
+      "folder": "binance first (06-11)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -114,7 +114,7 @@
     {
       "name": "binance d10 long",
       "folder": "nice",
-      "sim": "🤫 d10 (екзамен)",
+      "sim": "🤫 d10 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -226,9 +226,9 @@
       "stake_mult": 1.0
     },
     {
-      "name": "binance d12 short мало",
+      "name": "binance d12 short few",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -329,7 +329,7 @@
     {
       "name": "binance d8 short",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -433,9 +433,9 @@
       }
     },
     {
-      "name": "binance d8 short дофіга",
+      "name": "binance d8 short tons",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -534,9 +534,9 @@
       }
     },
     {
-      "name": "D10 п дір",
+      "name": "D10 p_dir",
       "folder": "nice",
-      "sim": "🤫 d10 (екзамен)",
+      "sim": "🤫 d10 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -610,9 +610,9 @@
       }
     },
     {
-      "name": "D10 спред",
+      "name": "D10 spread",
       "folder": "nice",
-      "sim": "🤫 d10 (екзамен)",
+      "sim": "🤫 d10 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -683,7 +683,7 @@
       }
     },
     {
-      "name": "D12 спред",
+      "name": "D12 spread",
       "folder": "nice",
       "sim": "binance d12 (probe)",
       "mode": "book",
@@ -756,9 +756,9 @@
       }
     },
     {
-      "name": "D8 20k шорт Задавим їх інтелектом",
+      "name": "D8 20k short crush-them-with-intellect",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -855,9 +855,9 @@
       }
     },
     {
-      "name": "d8 багато шорт",
+      "name": "d8 many short",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -959,7 +959,7 @@
     {
       "name": "d8 short)",
       "folder": "nice",
-      "sim": "🤫 d8 (екзамен)",
+      "sim": "🤫 d8 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -1068,9 +1068,9 @@
       }
     },
     {
-      "name": "d8v5 багато long",
+      "name": "d8v5 many long",
       "folder": "nice",
-      "sim": "🤫 d8 v5 (екзамен)",
+      "sim": "🤫 d8 v5 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,
@@ -1170,9 +1170,9 @@
       }
     },
     {
-      "name": "d8v5 багато short",
+      "name": "d8v5 many short",
       "folder": "nice",
-      "sim": "🤫 d8 v5 (екзамен)",
+      "sim": "🤫 d8 v5 (exam)",
       "mode": "unit",
       "notional": 15,
       "floor": 0.55,

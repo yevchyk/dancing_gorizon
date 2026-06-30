@@ -1,4 +1,4 @@
-"""ТТ dataset builder — ONE row per (symbol, scan), target = forward price CURVE.
+"""TT dataset builder — ONE row per (symbol, scan), target = forward price CURVE.
 
 Reuses the proven hc candle-prep (prepare_timeframes / prepare_1m / regime block)
 unchanged; the new parts are:

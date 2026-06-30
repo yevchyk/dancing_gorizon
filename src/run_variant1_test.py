@@ -118,16 +118,16 @@ def main():
     # 1. HIGH THRESHOLD SLICES
     # ====================================================
     print('=' * 72)
-    print('### ЗРІЗИ: up_2m / up_8m / up_10m — від 0.70 до 0.98 (exit=8m)')
+    print('### SLICES: up_2m / up_8m / up_10m — from 0.70 to 0.98 (exit=8m)')
     print('=' * 72)
     print(f'  {"model@exit":16} {"thr":>5} {"n":>6} {"n/day":>6} {"win":>5} {"avg%":>9} {"total%":>9}')
     print('  ' + '-' * 62)
     configs = [
-        ('up_2m', 'r2m', 'виходить ОДРАЗУ'),
-        ('up_2m', 'r8m', 'стандартний exit'),
+        ('up_2m', 'r2m', 'exits IMMEDIATELY'),
+        ('up_2m', 'r8m', 'standard exit'),
         ('up_8m', 'r8m', ''),
         ('up_10m', 'r8m', ''),
-        ('up_10m', 'r10m', 'за своїм горизонтом'),
+        ('up_10m', 'r10m', 'at its own horizon'),
     ]
     for model, ret_col, note in configs:
         note_str = f'  <- {note}' if note else ''
@@ -139,7 +139,7 @@ def main():
             ret = d.loc[msk, ret_col].to_numpy()
             pnl = ret - EVAL
             label = f'{model}@{ret_col[1:]}'
-            marker = ' <-- ПОЗИТИВНИЙ' if pnl.mean() > 0 else ''
+            marker = ' <-- POSITIVE' if pnl.mean() > 0 else ''
             print(f'  {label:16} {thr:>5.2f} {n:>6d} {n/window_days:>6.0f} '
                   f'{float((pnl>0).mean()):>5.3f} {pnl.mean()*100:>+9.4f} '
                   f'{pnl.sum()*100:>+9.1f}{marker}')
@@ -150,10 +150,10 @@ def main():
     # ====================================================
     print('=' * 72)
     print('### VARIANT 1 — weighted exit (min_count=2, exit=median(voted horizons))')
-    print('  Приклад: up_8m+up_10m (без 2m) -> median(8,10)=9m exit')
-    print('           up_2m+up_10m (без 8m) -> median(2,10)=6m exit')
-    print('           up_2m+up_8m  (без 10m)-> median(2,8)=5m exit')
-    print('           все три               -> median(2,8,10)=8m exit')
+    print('  Example: up_8m+up_10m (no 2m) -> median(8,10)=9m exit')
+    print('           up_2m+up_10m (no 8m) -> median(2,10)=6m exit')
+    print('           up_2m+up_8m  (no 10m)-> median(2,8)=5m exit')
+    print('           all three               -> median(2,8,10)=8m exit')
     print('=' * 72)
 
     def make_cands(df, engine_name, min_count=3, weighted=False, fixed_exit='8m'):

@@ -1,7 +1,7 @@
 """Honest per-symbol round-trip cost for the Binance USDⓈ-M perps, measured from
 REAL kline data — no flat 0.75% lie, no made-up constants.
 
-The user's demand: "провір гарно під кожну позицію, який і чи він існує" — so every
+The user's demand: "check carefully for each position, which one and whether it exists" — so every
 component here is grounded and the data is integrity-checked before we trust it:
 
   1. FEES (deterministic, PUBLIC, definitely exists): Binance USDT-M taker fee is

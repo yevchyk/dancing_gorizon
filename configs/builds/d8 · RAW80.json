@@ -1,6 +1,6 @@
 {
   "name": "d8 · RAW80",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d8",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "p_dir>=0.80, всі горизонти, обидва боки — макс обсяг · авто-генерований макс-оборот білд",
+  "description": "p_dir>=0.80, all horizons, both sides — max volume · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

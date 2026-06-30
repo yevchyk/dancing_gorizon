@@ -1,6 +1,6 @@
 {
   "name": "d8 · LONG88",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d8",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "лише лонги, p_dir>=0.88 — вища планка · авто-генерований макс-оборот білд",
+  "description": "longs only, p_dir>=0.88 — higher bar · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

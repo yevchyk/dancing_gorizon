@@ -44,14 +44,14 @@ def main():
 
     print('='*80)
     print('SPREAD = p_up_8m - p_down_8m')
-    print('Приклад: p_up=0.80, p_down=0.50 -> spread=+0.30 (LONG, впевненість 0.30)')
-    print('Краще за просто p_up: показує ПЕРЕВАГУ однієї сторони над іншою')
+    print('Example: p_up=0.80, p_down=0.50 -> spread=+0.30 (LONG, confidence 0.30)')
+    print('Better than plain p_up: shows the EDGE of one side over the other')
     print(f'holdout: {d.anchor_time.min():%H:%M} -> {d.anchor_time.max():%H:%M} UTC  n={len(d)}')
     print('='*80)
 
     # ===== TOP-50 BY V2 SPREAD =====
     print()
-    print('### ТОП-50 за |v2_spread| (8m) ###')
+    print('### TOP-50 by |v2_spread| (8m) ###')
     top50 = d.nlargest(50, 'v2_spread_abs').copy()
     top50['direction'] = np.where(top50.v2_spread_up > 0, 'LONG', 'SHORT')
     top50['pnl'] = top50.v2_side * top50.real_ret - EVAL
@@ -63,11 +63,11 @@ def main():
               f'{r.v2_up_8m:>6.3f} {r.v2_down_8m:>6.3f} {r.v2_spread_up:>+7.3f} '
               f'{r.real_ret*100:>+8.3f}% {r.pnl*100:>+7.3f}% {wl:>4}')
     w50 = int((top50.pnl > 0).sum())
-    print(f'\n  TOP-50 разом: win={w50}/50 ({w50*2:.0f}%) avg={top50.pnl.mean()*100:+.3f}% total={top50.pnl.sum()*100:+.1f}%')
+    print(f'\n  TOP-50 total: win={w50}/50 ({w50*2:.0f}%) avg={top50.pnl.mean()*100:+.3f}% total={top50.pnl.sum()*100:+.1f}%')
 
     # ===== SPREAD BINS =====
     print()
-    print('### WIN RATE ПО ШИРИНІ СПРЕДУ v2 ###')
+    print('### WIN RATE BY v2 SPREAD WIDTH ###')
     print(f'  {"spread_bin":>12} {"n":>5} {"long%":>6} {"win":>6} {"avg_pnl%":>9} {"total_pnl%":>10}')
     bins = [0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.10, 0.15, 1.0]
     for lo, hi in zip(bins, bins[1:]):
@@ -81,7 +81,7 @@ def main():
 
     # ===== V2 TOP-N (no live sim, just pure ranking) =====
     print()
-    print('### V2 up_8m: top-N по p_up_8m (все лонг) — без cooldown/cap ###')
+    print('### V2 up_8m: top-N by p_up_8m (all long) — no cooldown/cap ###')
     print(f'  {"topN":>5} {"win":>5} {"avg_pnl%":>9} {"total_pnl%":>10}')
     dup = d[d.v2_spread_up > 0].sort_values('v2_up_8m', ascending=False).copy()
     dup['pnl_up'] = dup.real_ret - EVAL
@@ -91,7 +91,7 @@ def main():
 
     # ===== SIMULATION =====
     print()
-    print('### СИМУЛЯЦІЯ в холдауті (live-like, top-N/scan по spread, 8m exit) ###')
+    print('### SIMULATION in holdout (live-like, top-N/scan by spread, 8m exit) ###')
     print(f'  {"strategy":42} {"n":>4} {"win":>5} {"avg%":>8} {"total%":>8}')
     print('  ' + '-'*72)
 
@@ -150,7 +150,7 @@ def main():
              label='AGREE v2+crisis combined spread top-5')
 
     print()
-    print(f'Ринок ці 3 год: avg 8m ret={d.real_ret.mean()*100:+.4f}%  '
+    print(f'Market these 3h: avg 8m ret={d.real_ret.mean()*100:+.4f}%  '
           f'down={(d.real_ret<0).mean():.2f}  std={d.real_ret.std()*100:.4f}%')
 
 if __name__ == '__main__':

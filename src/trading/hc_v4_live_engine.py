@@ -28,7 +28,7 @@ from .hc_live_engine import HCLiveSignal
 
 
 class HCV4LiveEngine:
-    default_system_name = "Танцюючий Горизонт"
+    default_system_name = "Dancing Horizon"
     horizon_exit_only = True
 
     def __init__(

@@ -1,7 +1,7 @@
 """Per-day stats for the short-horizon bluechip model, one block per horizon.
-Goal: see whether SHORTER horizon => smaller 'посос' (worst-day drawdown).
+Goal: see whether SHORTER horizon => smaller 'crash' (worst-day drawdown).
 
-Selection = per-day top-K longs by p_up (the 'Відскок' style). Per day we report
+Selection = per-day top-K longs by p_up (the 'Rebound' style). Per day we report
 n / win / avg% / $-day @ notional. Then a horizon-comparison summary sorted by
 worst-day $ (the posos) so the smallest-drawdown horizon is obvious.
 

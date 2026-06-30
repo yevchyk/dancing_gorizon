@@ -23,7 +23,7 @@ ACCOUNT    = 100.0         # starting $
 EVAL       = FC.EVAL_COST
 DAYS       = 3
 TOP_SCAN   = 3
-MAX_OPEN   = 5             # max concurrent (50*5=$250 margin из $100)
+MAX_OPEN   = 5             # max concurrent (50*5=$250 margin from $100)
 COOLDOWN   = 10
 EXIT_H     = "10m"
 

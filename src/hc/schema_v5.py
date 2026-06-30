@@ -4,7 +4,7 @@ The regime block re-injects MARKET STATE that v3 dropped with the BTC curves —
 but as compact scalars, not 60 curve columns. All symbol-blind, %/ratio space,
 causal at base_time, NaN-free after a 24h warm-up:
 
-  A. BTC reference ("вприски"): btc_ret_15m/1h/4h/24h, btc_vol_1h/24h,
+  A. BTC reference ("injections"): btc_ret_15m/1h/4h/24h, btc_vol_1h/24h,
      btc_range_pos_24h                                                  (7)
   B. Relative strength: rs_1h, rs_24h (symbol log-ret − BTC log-ret)    (2)
   C. Breadth / panic over the FROZEN trade universe: breadth_above_4h,

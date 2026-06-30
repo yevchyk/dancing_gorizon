@@ -1,7 +1,7 @@
 """Inject window.LIQUID + window.COST into the explorer data.js (no re-scoring).
 
 LIQUID = configs/hc_universe_liquid.json (the tradeable set; powers the
-"тільки ліквід" checkbox). COST = per-symbol honest round-trip % from hc.costs
+"liquid only" checkbox). COST = per-symbol honest round-trip % from hc.costs
 (bar-range based; powers the threshold-vs-cost traffic light). Appended at the
 END so SIM_META stays line 1 (the server reads that).
 """

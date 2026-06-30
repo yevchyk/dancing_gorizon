@@ -2,7 +2,7 @@
 
 Same grid discipline as v4 build (stride 60m + per-symbol jitter, per-symbol
 cost+funding thresholds, per-symbol shards, resume-able) with the v5 changes:
-  * horizons 30..320 by 5 (user: "далі воно бачить погано"), anchors (30,120,320)
+  * horizons 30..320 by 5 (user: "beyond that it sees poorly"), anchors (30,120,320)
   * +18 regime columns (market frame pre-pass cached once, workers reuse it)
 
   python -m src.run_binance_dataset_v5 --workers 8

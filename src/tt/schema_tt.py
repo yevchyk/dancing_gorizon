@@ -1,7 +1,7 @@
-"""ТТ feature schema — MAXIMAL inputs for the curve model (user: «максимальну хочу»).
+"""TT feature schema — MAXIMAL inputs for the curve model (user: «I want maximal»).
 
 Union of every curve block we have, at a WIDER window (N_POINTS=45 = 30×1.5,
-user: «навіть на половину більше»), PLUS the full BTC reference curve, PLUS the
+user: «even half again as much»), PLUS the full BTC reference curve, PLUS the
 18 v5 regime scalars. Horizon is the OUTPUT axis (the predicted curve), so
 `horizon_minutes`/`horizon_log` are NOT features here — the tail is time-of-day
 only. All symbol-blind (no identity features, §6).

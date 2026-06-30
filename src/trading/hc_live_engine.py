@@ -52,7 +52,7 @@ class HCLiveSignal:
 
 class HCLiveEngine:
     horizon_minutes = {f"{int(h)}m": int(h) for h in HC.HORIZON_ANCHORS}
-    default_system_name = "Танцюючий Горизонт"
+    default_system_name = "Dancing Horizon"
     horizon_exit_only = True
 
     def __init__(

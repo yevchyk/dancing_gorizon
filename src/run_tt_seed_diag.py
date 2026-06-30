@@ -1,4 +1,4 @@
-"""Diagnostic: do the 3 ТТ seeds give DIFFERENT predictions?
+"""Diagnostic: do the 3 TT seeds give DIFFERENT predictions?
 
 Scores each `curve_seed*/curve.cbm` SEPARATELY on a sample of the dataset and reports,
 per horizon: cross-seed DIRECTION agreement, pairwise correlation of the predicted

@@ -3,7 +3,7 @@
 Hard-won rules. Follow these so we stop repeating mistakes.
 
 ## 12. BINANCE workstream — single live data pool (read this first)
-- **HOLDOUT RULE — the "тихий тест"/sealed exam is RETIRED (2026-06-15, user).**
+- **HOLDOUT RULE — the "quiet test"/sealed exam is RETIRED (2026-06-15, user).**
   The test period is a PLAIN runtime holdout chosen at TRAIN time, never a
   permanent code fixture. Training cutoff = data-edge − N days, computed at
   runtime (`run_binance_overnight.py`, `HOLDOUT_DAYS`); judge on that unseen tail
@@ -15,9 +15,9 @@ Hard-won rules. Follow these so we stop repeating mistakes.
 - Data: `data/binance/candles` (365d × 1m × ~200 syms, schema == OKX store,
   timestamp alignment verified lag-0). Costs: `configs/binance_costs.json`
   (median RT 0.126% — the flat 0.75% figure below is OKX-only history).
-- **ONE data source in the explorer** = `reports/sim_explorer/data.js` (no «Дані»
+- **ONE data source in the explorer** = `reports/sim_explorer/data.js` (no "Data"
   dropdown anymore). It covers the last ~12 days up to NOW. Refresh with the panel
-  button **«докачати + ребілд до зараз (Binance)»** (`POST /api/binancenow` →
+  button **"fetch + rebuild to now (Binance)"** (`POST /api/binancenow` →
   `_binance_now`): fetch candles to now → rebuild `data/binance_now/dataset` →
   `run_binance_export --all --fresh` (writes data.js over the full window).
   `run_binance_export` auto-reads the freshest dataset (binance_now if present,
@@ -30,7 +30,7 @@ Hard-won rules. Follow these so we stop repeating mistakes.
   forward-shadow validation (go SMALL via the runner), NOT behind any exam; the
   panel exposes save/shadow/testnet only. OKX live stays small meanwhile.
 - **Exit-test / engine-test** (`run_binance_exittest`, `run_binance_engine_exittest`;
-  panel «🎬 тест виходу» / «рахувати з виходами») run on the single live window
+  panel «🎬 exit test» / «compute with exits») run on the single live window
   (last --days to now), with optional `from_min/to_min` sub-window. Engine-test
   reports FREQUENCY (`signals` pre-book vs `taken` after-book, per-day), PER-BUILD
   +/- after cross-dedup (n, /day, win, HOLD$/EXIT$, early), and PER-DAY (Kyiv)
@@ -207,7 +207,7 @@ Only after this profile do you choose: floor, horizon set, multi-leg cap, opp ca
     on OKX creds in `.env`). Stake = `--stake-margin $ × --leverage` = notional/pos.
   - Config: `configs/builds/portfolio_5x3.json` = d8_long + old_best + new_badday, $5×3,
     maxconc 12, cooldown 30m, universe `hc_universe_full.json`.
-  - Panel: Білди page → «🏦 Портфель — один риск-банк» → mode shadow/demo/LIVE + stake/lev →
+  - Panel: Builds page → "🏦 Portfolio — one risk book" → mode shadow/demo/LIVE + stake/lev →
     `POST /api/portfolio`. LIVE button has a confirm() guard.
   - CAVEAT (live): the 3 builds' horizon/hour zones were picked IN-SAMPLE on ONE short
     window (6h) → winrates (71/78/82%) are optimistic; expect lower live. Go SMALL.
@@ -218,9 +218,9 @@ Only after this profile do you choose: floor, horizon set, multi-leg cap, opp ca
   `reports/ZHNYVAR_ENGINE.md`. d7 · h{30,40,50,60} · p_dir≥0.85 · opp≤0.05 ·
   risk-unit sizing. 24h OOS: 21 units, 71% win (tail-driven $ — go live SMALL).
 
-## 13. Танцюючий Тарас (ТТ) — new training paradigm (SPEC, 2026-06-15)
+## 13. Dancing Taras (TT) — new training paradigm (SPEC, 2026-06-15)
 - **NOT another P(profit) classifier — a paradigm change.** Full spec + build plan:
-  `DANCING_TARAS.md` (authoritative for ТТ; read it before touching ТТ code).
+  `DANCING_TARAS.md` (authoritative for TT; read it before touching TT code).
 - Core: regress the **forward price CURVE** (cumulative log-return, vol-normalized,
   1-min grid 1..240) as a `MultiRMSE` multi-output — **horizon is the OUTPUT axis,
   not an input feature** (kills §9 off-anchor miscalibration; continuous-h query =
@@ -237,5 +237,5 @@ Only after this profile do you choose: floor, horizon set, multi-leg cap, opp ca
   (cutoff = edge − holdout-days; `--no-regime` for fast smoke).
 - **HOLDOUT: last 4 days are RESERVED for the user's own test — do NOT touch/look.**
   Train cutoff = data-edge − 4 days. Tests are NOT to be run yet (user's call).
-- Key hypothesis ТТ tests: short horizons (2–15m), cost-dead on OKX's 0.75% wall,
+- Key hypothesis TT tests: short horizons (2–15m), cost-dead on OKX's 0.75% wall,
   may be ALIVE on Binance's ~0.126% RT cost.

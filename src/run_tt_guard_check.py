@@ -1,4 +1,4 @@
-"""Holdout-integrity verifier for ТТ — proves the model never trained on the test tail.
+"""Holdout-integrity verifier for TT — proves the model never trained on the test tail.
 
 Loads the TRAIN dataset the model actually fit on (data/tt_curve) and checks that NO
 training row has base_time at/after the cutoff, and reports the embargo gap. Run it

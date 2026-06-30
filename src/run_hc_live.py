@@ -108,7 +108,7 @@ def main() -> None:
         help="comma-separated HC horizon grid, e.g. 10,15,20,25,30,35,40,45,50,60,75,90,120",
     )
     ap.add_argument("--profile", default="")
-    ap.add_argument("--system-name", default="Танцюючий Горизонт")
+    ap.add_argument("--system-name", default="Dancing Horizon")
     ap.add_argument("--no-fetch", action="store_true")
     args = ap.parse_args()
 

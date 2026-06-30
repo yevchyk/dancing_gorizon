@@ -1,4 +1,4 @@
-"""ТТ Phase 1 CLI — train the curve model (MultiRMSE).
+"""TT Phase 1 CLI — train the curve model (MultiRMSE).
 
   # smoke (CPU, few iters):
   python -m src.run_tt_train --dataset-dir data/tt_smoke/dataset \
@@ -45,7 +45,7 @@ def main() -> None:
     ap.add_argument("--embargo-min", type=int, default=None,
                     help="train/val gap; default = h_max + entry_delay (one row's target span)")
     ap.add_argument("--continue-from", type=Path, default=None,
-                    help="довчити: existing model dir; adds --iterations MORE trees per seed on top "
+                    help="continue training: existing model dir; adds --iterations MORE trees per seed on top "
                          "(reuses that model's standardizer). Run on the same/refreshed dataset.")
     a = ap.parse_args()
 

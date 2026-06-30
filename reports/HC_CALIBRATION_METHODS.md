@@ -26,7 +26,7 @@ the REAL realized winrate + avg net in each bin (does the score predict outcome?
 | **C1** | RAW | bin by raw `up_prob` (long) / `down_prob` (short), one model, one horizon | ✅ OLD Jun1-4: monotonic; edge only ≥0.85-0.90 (0.90-0.95→73% win) |
 | **C2** | OPP_FILTER | C1 but require opposite prob ≤ cap (0.20) | ✅ ~no effect vs C1 (opp adds nothing) |
 | **C3** | SPREAD | bin by `p_dir − p_opp` | ✅ monotonic; spread≥0.9 → ~86% win (≈ same as C1 tail) |
-| **C4** | MODEL_BLEND_AVG | `p = (p_old + p_new)/2` then C1 ("скласти й /2") | ⏳ June5 only (thin) |
+| **C4** | MODEL_BLEND_AVG | `p = (p_old + p_new)/2` then C1 ("add and /2") | ⏳ June5 only (thin) |
 | **C5** | MODEL_OVERLAY_MIN | `p = min(p_old, p_new)` (both agree) then C1 | ✅ June5: thins sample, no edge (tail empty) |
 | **C6** | HORIZON_MEAN | per (symbol,scan): `p̄ = mean(p_dir over horizons 30/45/60/90)`; trade symbol by p̄; outcome = mean over horizons | ✅ OLD Jun1-4: +4-7pp winrate vs C1 in tail (0.90-95→78.9% vs 74.8%) but fewer trades; denoise helps a little, edge still only ≥0.85 |
 | **C7** | SPREAD_MEAN | per (symbol,scan): `s̄ = mean(up−down over horizons)`; trade by s̄ | ✅ OLD Jun1-4: s̄≥0.90 → 94.8% win but only ~15/day; cleanest filter, very rare |

@@ -1,4 +1,4 @@
-"""Strong market-regime detector ("посос" detector). Unlike model C (which predicted
+"""Strong market-regime detector ("crash" detector). Unlike model C (which predicted
 per-symbol up/down -> AUC 0.51), this predicts the MARKET AGGREGATE: will the median
 forward return of the whole universe be in the worst quintile (danger). Clean target.
 

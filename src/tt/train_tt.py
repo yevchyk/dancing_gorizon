@@ -1,4 +1,4 @@
-"""ТТ Phase 1 — the CURVE model (CatBoost MultiRMSE, multi-output).
+"""TT Phase 1 — the CURVE model (CatBoost MultiRMSE, multi-output).
 
 Predicts the whole vol-normalized cumulative-return curve (h=1..h_max nodes) in
 ONE pass — horizon is the output axis, no re-query (kills §9 off-anchor bias).
@@ -75,7 +75,7 @@ def train_curve(*, dataset_dir: Path, model_dir: Path, seeds: list[int], val_fra
                 embargo_min: int | None, no_scale: bool = False,
                 continue_from: Path | None = None) -> dict:
     feat_cols, tgt_cols = _resolve_cols(dataset_dir)
-    print(f"loading ТТ curve dataset from {dataset_dir}", flush=True)
+    print(f"loading TT curve dataset from {dataset_dir}", flush=True)
     df = load_dataset(dataset_dir)
     if sample_frac < 1.0:
         df = df.sample(frac=sample_frac, random_state=42).reset_index(drop=True)
@@ -96,7 +96,7 @@ def train_curve(*, dataset_dir: Path, model_dir: Path, seeds: list[int], val_fra
     all_metrics = []
     mu = sd = None
     if continue_from is not None:
-        # довчування: REUSE the original per-node standardizer (mu/sd) so the added
+        # continued training: REUSE the original per-node standardizer (mu/sd) so the added
         # trees fit the same target scale; never recompute it from a new split.
         std = json.loads((continue_from / "standardizer.json").read_text(encoding="utf-8"))
         if std.get("target_names") and std["target_names"] != tgt_cols:

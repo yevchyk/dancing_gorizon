@@ -313,13 +313,13 @@ class H(BaseHTTPRequestHandler):
                 drv = ("import subprocess,sys;"
                        f"subprocess.run([sys.executable,'-m','src.run_fetcher','--once','--universe','store','--workers','10','--lookback-min',{str(lb)!r}]);"
                        f"subprocess.run([sys.executable,'-m','src.run_hc_export_html','--hours',{hours!r},'--floor',{floor!r},'--dense',{dense!r}])")
-                jid = _launch("докачати + оновити дані", _pyc(drv), kind="data")
+                jid = _launch("fetch + update data", _pyc(drv), kind="data")
             else:
-                jid = _launch("докачка свічок", ["src.run_fetcher", "--once", "--universe", "store",
+                jid = _launch("fetch candles", ["src.run_fetcher", "--once", "--universe", "store",
                                                 "--workers", "10", "--lookback-min", str(lb)])
             return self._send(200, {"id": jid})
         if p == "/api/refreshall":
-            # "я дебіл" button: fetch candles to now -> regenerate the explorer stats.
+            # "idiot-proof" button: fetch candles to now -> regenerate the explorer stats.
             # v4/flat models are scored DENSELY on fresh candles inside the export
             # (no dataset to go stale), so this is just fetch + regen.
             lb = int(b.get("lookback", 1500)); hours = str(b.get("hours", 48))
@@ -327,7 +327,7 @@ class H(BaseHTTPRequestHandler):
             drv = ("import subprocess,sys;"
                    f"subprocess.run([sys.executable,'-m','src.run_fetcher','--once','--universe','store','--workers','10','--lookback-min',{str(lb)!r}]);"
                    f"subprocess.run([sys.executable,'-m','src.run_hc_export_html','--hours',{hours!r},'--floor',{floor!r}])")
-            jid = _launch("🙋 докачати до зараз + оновити стату", _pyc(drv), kind="data")
+            jid = _launch("🙋 fetch to now + refresh stats", _pyc(drv), kind="data")
             return self._send(200, {"id": jid})
         if p == "/api/runbuild":
             fp = _find_build_file(b.get("name", ""))
@@ -346,9 +346,9 @@ class H(BaseHTTPRequestHandler):
                     args += ["--floor", str(b.get("floor"))]
                 jid = _launch(f"sim build: {nm}", args)
                 return self._send(200, {"id": jid})
-                jid = _launch(f"sim Р±С–Р»РґР°: {nm}", args)
+                jid = _launch(f"sim build: {nm}", args)
                 return self._send(200, {"id": jid})
-            jid = _launch(f"sim білда: {nm}", ["src.run_hc_build", "--build", str(fp), "--json-out"])
+            jid = _launch(f"sim build: {nm}", ["src.run_hc_build", "--build", str(fp), "--json-out"])
             return self._send(200, {"id": jid})
         if p == "/api/data":
             hours = str(b.get("hours", 64)); floor = str(b.get("floor", 0.70))
@@ -377,7 +377,7 @@ class H(BaseHTTPRequestHandler):
         if p == "/api/v4live":
             return self._send(200, {"id": _v4live(b)})
         if p == "/api/ttexport":
-            # rebuild the up-to-now ТТ window (reuses the cached market frame, fast)
+            # rebuild the up-to-now TT window (reuses the cached market frame, fast)
             # then score the curve into window.TT. The sterile training set is untouched.
             days = str(int(b.get("days", 18)))
             drv = ("import subprocess,sys;"
@@ -387,7 +387,7 @@ class H(BaseHTTPRequestHandler):
                    "sys.exit(b.returncode) if b.returncode else None;"
                    "e=subprocess.run([sys.executable,'-m','src.run_tt_export_html']);"
                    "sys.exit(e.returncode)")
-            jid = _launch("🌀 ТТ: рахунок до зараз → дослідник", _pyc(drv), kind="ttexport")
+            jid = _launch("🌀 TT: compute to now → explorer", _pyc(drv), kind="ttexport")
             return self._send(200, {"id": jid})
         if p == "/api/autodata":
             return self._send(200, {"enabled": _set_autodata(bool(b.get("enabled", False)))})
@@ -579,7 +579,7 @@ def _train(b: dict) -> str:
         f"'--cutoff-local',{cutoff!r},'--depth',{depth!r},'--iterations',{iters!r},'--no-early-stop','--task-type','GPU']);"
         "sys.exit(b.returncode)"
     )
-    return _launch(f"тренування {name}", _pyc(driver), standing=False)
+    return _launch(f"training {name}", _pyc(driver), standing=False)
 
 
 def _pyc(code: str) -> list[str]:
@@ -743,7 +743,7 @@ def _exittest(b: dict) -> str:
     spec_fp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
     out_fp = EXPLORER / "exit_result.json"
     cmd = ["src.run_binance_exittest", "--spec", str(spec_fp), "--out", str(out_fp)]
-    return _launch("🚪 тест виходу", cmd, kind="exittest")
+    return _launch("🚪 exit test", cmd, kind="exittest")
 
 
 def _enginetest(b: dict) -> str:
@@ -766,7 +766,7 @@ def _enginetest(b: dict) -> str:
     spec_fp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
     out_fp = EXPLORER / "engine_result.json"
     cmd = ["src.run_binance_engine_exittest", "--spec", str(spec_fp), "--out", str(out_fp)]
-    return _launch("🚪 тест движка з виходами", cmd, kind="enginetest")
+    return _launch("🚪 engine test with exits", cmd, kind="enginetest")
 
 
 def _binance_portfolio(b: dict) -> dict:
@@ -831,7 +831,7 @@ def _binance_now(b: dict) -> str:
         f"e=subprocess.run([sys.executable,'-m','src.run_binance_export','--all','--fresh','--dataset',{ds!r}]);"
         "sys.exit(e.returncode)"
     )
-    return _launch("🟢 Binance: докачати + ребілд до зараз", _pyc(drv), kind="binance_now")
+    return _launch("🟢 Binance: fetch + rebuild to now", _pyc(drv), kind="binance_now")
 
 
 def _v4live(b: dict) -> str:

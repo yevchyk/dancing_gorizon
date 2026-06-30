@@ -1,6 +1,6 @@
 {
   "name": "d8 · SPREAD70",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d8",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "spread(p_dir-p_opp)>=0.70 · авто-генерований макс-оборот білд",
+  "description": "spread(p_dir-p_opp)>=0.70 · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

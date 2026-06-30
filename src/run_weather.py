@@ -2,7 +2,7 @@
 
 (A) REPRODUCE the validated causal ladder (L1->L2->L3) from the module alone, to
     prove src/trading/weather.py is a correct single source of truth.
-(B) HOURLY weather telemetry for crypto AND tradfi (the user's "погодинно" view):
+(B) HOURLY weather telemetry for crypto AND tradfi (the user's "hourly" view):
     stage distribution per day + a sample readout.
 
   python -m src.run_weather --horizon 8m --warmup 7

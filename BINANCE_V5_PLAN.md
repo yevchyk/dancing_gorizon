@@ -28,7 +28,7 @@ causal (data <= base only), NaN-free after a 24h warm-up. Live parity is
 mandatory: same functions for dataset and live engine, gate extended in
 `run_binance_parity_check`.
 
-A. BTC reference (the "вприски" — compact scalars, not the old 60-col curve):
+A. BTC reference (the "injections" — compact scalars, not the old 60-col curve):
    - btc_ret_15m / 1h / 4h / 24h: log-return of BTC close over the lookback (4)
    - btc_vol_1h / 24h: std of 5m log-returns over the window, annualis-free raw (2)
    - btc_range_pos_24h: (close − min24h) / (max24h − min24h), 0..1 (1)
@@ -45,7 +45,7 @@ C. Breadth / own panic index (computed over the FROZEN trade universe file —
    (fear&greed external index: rejected for v1 — external dependency, daily
    granularity, kills parity/self-sufficiency. Our breadth/panic IS the index.)
 
-D. Symbol's own volatility context (user's "сумарна вола"):
+D. Symbol's own volatility context (user's "total vol"):
    - sym_vol_1h / sym_vol_24h: std of 5m log-returns (2)
    - sym_vol_ratio: sym_vol_1h / max(sym_vol_24h, eps) — vol expanding? (1)
    - sym_range_pos_24h: position in own 24h range, 0..1 (1)
@@ -55,8 +55,8 @@ Implementation notes:
   symbols join it by base_time; B/D computed per symbol. Builder: `hc/data_v5.py`
   (+ `schema_v5.py`), new `src/run_binance_dataset_v5.py` re-using the v4 grid
   (stride 60m + jitter, per-symbol cost+funding thresholds — unchanged) BUT with
-  the user's horizon decision: **30..320 by 5** (59 values; "далі воно бачить
-  погано"), anchors (30, 120, 320) + 3 random. Funding term in the threshold
+  the user's horizon decision: **30..320 by 5** (59 values; "beyond that it sees
+  poorly"), anchors (30, 120, 320) + 3 random. Funding term in the threshold
   stays med|rate|×h/480 — it is time-proportional, not tied to the max horizon.
 - +1 col per user: `funding_level` = current 8h funding rate of the symbol
   normalized by its own yearly median |rate| (crowding signal).
@@ -73,7 +73,7 @@ Implementation notes:
 Trainer unchanged (`run_hc_prod_train --random-val`, cutoff = frozen probe_from,
 od_wait 300 stays — let early stop bite if 20000 saturates).
 
-## 3. Calibration layer (H3 — answers "на чому калібрувати")
+## 3. Calibration layer (H3 — answers "what to calibrate on")
 - What: per-head isotonic regression p_raw -> p_cal (fallback: Platt if probe
   shows isotonic overfits thin tails); fitted SEPARATELY per depth family.
 - Where fitted (two legal options, pick by sample size):
@@ -96,7 +96,7 @@ od_wait 300 stays — let early stop bite if 20000 saturates).
   window — it competes on probe, and only the chosen ONE config sits the exam.
 
 ## 5. DECIDED with the user (2026-06-11 night)
-1. Horizons: **30–320 / 5** ("далеко воно бачить погано") — grid + anchors
+1. Horizons: **30–320 / 5** ("far it sees poorly") — grid + anchors
    updated in §1; labels formula unchanged.
 2. Breadth universe = frozen 153 trade file. ✓
 3. Ablation arm: KEPT (explained: when two things change at once — budget AND

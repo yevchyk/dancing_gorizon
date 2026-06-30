@@ -1,14 +1,11 @@
 {
-  "name": "binance d8 short",
+  "name": "d8v5 many long",
   "folder": "nice",
-  "sim": "🤫 d8 (exam)",
+  "sim": "🤫 d8 v5 (exam)",
   "mode": "unit",
   "notional": 15,
   "floor": 0.55,
-  "period": {
-    "fromAgoH": 48,
-    "toAgoH": 0
-  },
+  "period": null,
   "reverse": false,
   "one_pos": true,
   "sizing": null,
@@ -43,7 +40,11 @@
     "WLD_USDT_SWAP",
     "UB_USDT_SWAP",
     "OP_USDT_SWAP",
-    "GUA_USDT_SWAP"
+    "GUA_USDT_SWAP",
+    "AIGENSYN_USDT_SWAP",
+    "ZEC_USDT_SWAP",
+    "AR_USDT_SWAP",
+    "QCOM_USDT_SWAP"
   ],
   "description": "",
   "levels": [
@@ -51,7 +52,7 @@
       "conditions": [
         {
           "regulator": "side",
-          "value": "short"
+          "value": "long"
         }
       ]
     },
@@ -59,7 +60,7 @@
       "conditions": [
         {
           "regulator": "p_dir",
-          "value": 0.67
+          "value": 0.77
         }
       ]
     },
@@ -68,29 +69,24 @@
         {
           "regulator": "horizon",
           "value": [
-            70,
-            75,
-            80,
-            85,
-            90,
             95,
             100,
             105,
-            65,
-            60,
             110,
-            115
+            115,
+            120,
+            90
           ]
         }
       ]
     }
   ],
   "summary": {
-    "trades": 103,
-    "winrate_pct": 72.8,
-    "avg_net_pct": 0.795,
-    "total_usd": 12.28,
-    "usd_per_day": 6.14,
-    "max_concurrent": 23
+    "trades": 126,
+    "winrate_pct": 65.9,
+    "avg_net_pct": 0.67,
+    "total_usd": 12.67,
+    "usd_per_day": 2.53,
+    "max_concurrent": 39
   }
 }

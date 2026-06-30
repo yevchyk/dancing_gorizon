@@ -1,13 +1,13 @@
 {
-  "name": "d8 багато шорт",
+  "name": "binance d12 short few",
   "folder": "nice",
-  "sim": "🤫 d8 (екзамен)",
+  "sim": "🤫 d8 (exam)",
   "mode": "unit",
   "notional": 15,
   "floor": 0.55,
   "period": null,
   "reverse": false,
-  "one_pos": true,
+  "one_pos": false,
   "sizing": null,
   "book": {
     "max_concurrent": 12,
@@ -15,36 +15,25 @@
     "cooldown_min": 30
   },
   "banned": [
-    "BLESS_USDT_SWAP",
-    "BSB_USDT_SWAP",
-    "PORTAL_USDT_SWAP",
     "LAB_USDT_SWAP",
-    "ALLO_USDT_SWAP",
-    "PIPPIN_USDT_SWAP",
-    "SAHARA_USDT_SWAP",
-    "SKYAI_USDT_SWAP",
-    "BIO_USDT_SWAP",
-    "BEAT_USDT_SWAP",
-    "JCT_USDT_SWAP",
-    "GENIUS_USDT_SWAP",
-    "ROBO_USDT_SWAP",
-    "EVAA_USDT_SWAP",
-    "FF_USDT_SWAP",
-    "SNDK_USDT_SWAP",
-    "VELVET_USDT_SWAP",
-    "EDEN_USDT_SWAP",
+    "EPIC_USDT_SWAP",
+    "CLO_USDT_SWAP",
+    "MAGMA_USDT_SWAP",
     "HOME_USDT_SWAP",
     "ESPORTS_USDT_SWAP",
-    "H_USDT_SWAP",
-    "EPIC_USDT_SWAP",
     "WLD_USDT_SWAP",
-    "UB_USDT_SWAP",
+    "ALLO_USDT_SWAP",
+    "BEAT_USDT_SWAP",
+    "H_USDT_SWAP",
+    "PORTAL_USDT_SWAP",
+    "SKYAI_USDT_SWAP",
+    "JCT_USDT_SWAP",
+    "XPL_USDT_SWAP",
+    "OPG_USDT_SWAP",
+    "PIPPIN_USDT_SWAP",
+    "BLESS_USDT_SWAP",
     "OP_USDT_SWAP",
-    "GUA_USDT_SWAP",
-    "AIGENSYN_USDT_SWAP",
-    "ZEC_USDT_SWAP",
-    "AR_USDT_SWAP",
-    "QCOM_USDT_SWAP"
+    "PLAY_USDT_SWAP"
   ],
   "description": "",
   "levels": [
@@ -60,7 +49,7 @@
       "conditions": [
         {
           "regulator": "p_dir",
-          "value": 0.69
+          "value": 0.79
         }
       ]
     },
@@ -69,24 +58,34 @@
         {
           "regulator": "horizon",
           "value": [
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
             95,
             100,
             105,
             110,
             115,
             120,
-            90
+            125,
+            50,
+            45
           ]
         }
       ]
     }
   ],
   "summary": {
-    "trades": 380,
-    "winrate_pct": 56.6,
-    "avg_net_pct": 0.355,
-    "total_usd": 20.21,
-    "usd_per_day": 4.04,
-    "max_concurrent": 67
+    "trades": 50,
+    "winrate_pct": 80,
+    "avg_net_pct": 0.921,
+    "total_usd": 6.9,
+    "usd_per_day": 1.38,
+    "max_concurrent": 27
   }
 }

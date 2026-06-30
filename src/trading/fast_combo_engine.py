@@ -150,7 +150,7 @@ PROFILES = {
         "include_flat": False,
         "base_stake_usd": 5.0,
     },
-    # "Дриль / Drill" — the crisis SHORT engine: down_8m AND down_10m both >=0.80
+    # "Drill" — the crisis SHORT engine: down_8m AND down_10m both >=0.80
     # -> short, 10m hold. Built on the worthy machinery: only down_8m/down_10m can
     # vote (others overridden to never fire), min_count=2 forces BOTH, short only.
     # 72h holdout: +26% / win 0.55 / green 3-of-4 days. Runs alongside Unicorn for

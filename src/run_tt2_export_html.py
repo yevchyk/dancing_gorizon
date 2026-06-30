@@ -1,4 +1,4 @@
-"""Export TT v2 models (ratioA + ratioB) -> window.TT_MODELS in data.js for the ТТ tab.
+"""Export TT v2 models (ratioA + ratioB) -> window.TT_MODELS in data.js for the TT tab.
 
 Ratio-native scoring on the holdout-inclusive eval dataset (data/tt2_now_ratioA):
   move% = (pred_cumulative[h]-1)*100 ; side = sign(move) ; net = side*(y_h-1)*100 - cost.
@@ -28,8 +28,8 @@ COSTS = Path("configs/binance_costs.json")
 MEDIAN_COST = 0.126
 LIVE_HORIZONS = (30, 45, 60, 90, 120, 180, 240, 270, 300)
 PRESERVE = ("window.SIM_META", "window.SYMS", "window.LIQUID", "window.COST")
-MODELS = [("ratioA", "A · vs входу (кумулятив)", "models/tt2_ratioA"),
-          ("ratioB", "B · vs попередньої (покроково)", "models/tt2_ratioB")]
+MODELS = [("ratioA", "A · vs entry (cumulative)", "models/tt2_ratioA"),
+          ("ratioB", "B · vs previous (step-by-step)", "models/tt2_ratioB")]
 
 
 def _existing_lines() -> dict[str, str]:
@@ -118,7 +118,7 @@ def main() -> None:
         print(f"  scored {key}: legs={len(legs)} holdout={sum(l[6] for l in legs)}")
 
     ex = _existing_lines()
-    sims = json.loads(ex.get("window.SIMS", "{}")); sims.pop("ТТ крива", None)
+    sims = json.loads(ex.get("window.SIMS", "{}")); sims.pop("TT curve", None)
     lines = [f"{k}={ex[k]};" for k in PRESERVE if k in ex]
     lines.append("window.SIMS=" + json.dumps(sims, separators=(",", ":")) + ";")
     lines.append("window.TT_MODELS=" + json.dumps(models_out, separators=(",", ":")) + ";")

@@ -106,7 +106,7 @@ def main():
 
     # append v4 (1-min-horizon) models scored DENSELY on fresh candles.
     # FULL universe (same as run_hc_build) so the numbers match; the explorer's
-    # "тільки ліквід" checkbox (on by default) then shows the honest tradeable subset.
+    # "liquid only" checkbox (on by default) then shows the honest tradeable subset.
     v4_floor = min(args.floor, V4_FLOOR)
     v4_syms = syms_list
     v4_horizons: set[int] = set()

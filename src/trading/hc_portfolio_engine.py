@@ -91,7 +91,7 @@ class HCPortfolioEngine:
     """Trust-engine duck-type for LiveTrader, combining N builds into one book."""
 
     horizon_exit_only = True
-    default_system_name = "Танцюючий Горизонт"
+    default_system_name = "Dancing Horizon"
 
     def __init__(
         self,
@@ -124,7 +124,7 @@ class HCPortfolioEngine:
         # JSON keys arrive as strings; normalise. votes=1 is implicitly 1.0.
         self.consensus_boost = {int(k): float(v) for k, v in (consensus_boost or {}).items()}
         # hard cap on the combined multiplier (build x sizing x consensus) — the
-        # "жопа не горить" guard: no config combination can exceed it.
+        # "nothing's on fire" guard: no config combination can exceed it.
         self.max_stake_mult = float(max_stake_mult)
         self.last_near_misses: list[str] = []
 

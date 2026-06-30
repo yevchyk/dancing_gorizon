@@ -1,6 +1,6 @@
 {
   "name": "d12 · SHORT80",
-  "folder": "🔥 макс-оборот",
+  "folder": "🔥 max-turnover",
   "sim": "binance d12",
   "mode": "book",
   "notional": 15.0,
@@ -15,7 +15,7 @@
     "cooldown_min": 20
   },
   "banned": [],
-  "description": "лише шорти, p_dir>=0.80 — наш едж · авто-генерований макс-оборот білд",
+  "description": "shorts only, p_dir>=0.80 — our edge · auto-generated max-turnover build",
   "levels": [
     {
       "conditions": [

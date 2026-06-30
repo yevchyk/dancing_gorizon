@@ -137,7 +137,7 @@ def main() -> None:
             continue
         green = sum(1 for x in nets if x > 0)
         print(f"{h:>5} {f'{green}/{len(nets)}':>9} {np.median(wins):>7.1f}% {np.median(nets):>8.3f} {np.mean(nets):>9.3f}")
-    print(f"\nGREEN/N = у скількох вікнах net додатний. Хочемо >=~3/4 зелених + додатний mean.", flush=True)
+    print(f"\nGREEN/N = in how many windows net is positive. We want >=~3/4 green + positive mean.", flush=True)
 
 
 if __name__ == "__main__":

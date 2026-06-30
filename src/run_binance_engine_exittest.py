@@ -1,4 +1,4 @@
-"""Engine backtest WITH exits for a SET of builds (the Консенсус/movie button).
+"""Engine backtest WITH exits for a SET of builds (the Consensus/movie button).
 
 Reads a spec {builds:[{sim,levels,exit_policy?}], exit_default, book, notional}.
 Mirrors the live engine: score each distinct model once, each build offers 1

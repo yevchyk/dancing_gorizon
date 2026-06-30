@@ -29,7 +29,7 @@ DATASET_Y1 = C.ROOT / "data" / "binance_y1" / "dataset"
 DATASET = DATASET_NOW if DATASET_NOW.exists() else DATASET_Y1
 COSTS = C.CONFIGS_DIR / "binance_costs.json"
 LIQUID = C.CONFIGS_DIR / "binance_universe_liquid.json"
-FOLDER = "🔥 макс-оборот"
+FOLDER = "🔥 max-turnover"
 FLOOR = 0.55
 NOTIONAL = 15.0
 DAYS = 12
@@ -43,17 +43,17 @@ MODELS = [
 
 # (suffix, description, levels) — levels mirror explorer regulators exactly
 APPROACHES = [
-    ("RAW80", "p_dir>=0.80, всі горизонти, обидва боки — макс обсяг",
+    ("RAW80", "p_dir>=0.80, all horizons, both sides — max volume",
      [[{"regulator": "p_dir", "value": 0.80}]]),
-    ("RAW85", "p_dir>=0.85 — якісніший хвіст",
+    ("RAW85", "p_dir>=0.85 — cleaner tail",
      [[{"regulator": "p_dir", "value": 0.85}]]),
     ("SPREAD70", "spread(p_dir-p_opp)>=0.70",
      [[{"regulator": "spread", "value": 0.70}]]),
-    ("bdw", "p_dir>=0.80 І p_opp<=0.05 — чистий напрямок",
+    ("bdw", "p_dir>=0.80 AND p_opp<=0.05 — clean direction",
      [[{"regulator": "p_dir", "value": 0.80}], [{"regulator": "p_opp", "value": 0.05}]]),
-    ("SHORT80", "лише шорти, p_dir>=0.80 — наш едж",
+    ("SHORT80", "shorts only, p_dir>=0.80 — our edge",
      [[{"regulator": "side", "value": "short"}], [{"regulator": "p_dir", "value": 0.80}]]),
-    ("LONG88", "лише лонги, p_dir>=0.88 — вища планка",
+    ("LONG88", "longs only, p_dir>=0.88 — higher bar",
      [[{"regulator": "side", "value": "long"}], [{"regulator": "p_dir", "value": 0.88}]]),
 ]
 
@@ -190,7 +190,7 @@ def main() -> None:
                 "notional": NOTIONAL, "floor": FLOOR, "period": None,
                 "reverse": False, "one_pos": False, "sizing": None,
                 "book": dict(BOOK), "banned": [],
-                "description": f"{desc} · авто-генерований макс-оборот білд",
+                "description": f"{desc} · auto-generated max-turnover build",
                 "levels": [{"conditions": lvl} for lvl in levels],
                 "summary": summ,
             }

@@ -205,7 +205,7 @@ Per the live sizing decision, the packaged modes trade small (down from the
   keep `top_per_scan` and `max_concurrent` small and sanity-check in shadow first.
 - **quality = litmus paper** (the regime canary): runs on **NEW**, ultra-strict
   `p_dir>=0.94 OR spread>=0.92`.  Its job is not to earn — it is the **litmus test
-  for regime**: when quality starts producing signals, the calm/штиль regime is
+  for regime**: when quality starts producing signals, the calm/calm regime is
   lifting and the active modes become candidates.  Zero quality signals = stay in
   bad_day_worker / sit-out posture.  Sized **`$5 * 1x = $5` notional** on purpose:
   it is a standing shadow canary the user glances at in the logs, not a sizer.
@@ -213,7 +213,7 @@ Per the live sizing decision, the packaged modes trade small (down from the
   the live mode is a behavioural proxy with the same sit-out-on-bad-days property,
   not the same score>=1.95 engine.)
 
-Pending (deferred, do later): the **squeezer (вижимач)** good-day engine.  For now
+Pending (deferred, do later): the **squeezer (squeezer)** good-day engine.  For now
 it is **OLD-only** (`models/hc_exec_stride120_nonoverlap`), because NEW has no
 clean forward active day to extract from yet.  See "Open / next" in README.
 

@@ -1,6 +1,6 @@
-"""Export the ТТ curve model -> `window.TT` in data.js for the dedicated 'ТТ' tab.
+"""Export the TT curve model -> `window.TT` in data.js for the dedicated 'TT' tab.
 
-ТТ predicts a forward CURVE, not P(up)/P(down) — so it gets its OWN tab/data
+TT predicts a forward CURVE, not P(up)/P(down) — so it gets its OWN tab/data
 instead of being wedged into the prob-model explorer. Scores the curve over
 data/tt_now/dataset (covers up to NOW; the training set tt_curve stays sterile).
 Each leg carries a `holdout` flag (base_time >= the training cutoff) so the tab
@@ -8,7 +8,7 @@ splits IN-SAMPLE vs the UNSEEN HOLDOUT (= the user's OOS test). Conviction =
 |predicted move|, per-horizon percentile in [0,1] (the tab's gate). net =
 side*realized_% − per-instrument Binance cost. Live-zone horizons only (≥30).
 
-Preserves the other (binance) sims in data.js; drops any legacy 'ТТ крива' sim.
+Preserves the other (binance) sims in data.js; drops any legacy 'TT curve' sim.
 
   python -m src.run_tt_export_html
 """
@@ -72,7 +72,7 @@ def main() -> None:
 
     md = a.model_dir
     if not (md / "feature_names.json").exists():
-        raise SystemExit(f"no ТТ model at {md} — train it first (src.run_tt_train)")
+        raise SystemExit(f"no TT model at {md} — train it first (src.run_tt_train)")
     feat = json.loads((md / "feature_names.json").read_text(encoding="utf-8"))
     std = json.loads((md / "standardizer.json").read_text(encoding="utf-8"))
     mu = np.asarray(std["mu"], dtype="float64"); sd = np.asarray(std["sd"], dtype="float64")
@@ -123,10 +123,10 @@ def main() -> None:
         side = np.where(ph >= 0, 1, -1)
         absp = np.abs(ph); n = len(absp)
         order = absp.argsort(); ranks = np.empty(n); ranks[order] = np.arange(n)
-        conv = ranks / max(n - 1, 1)                        # відносний: per-horizon percentile [0,1]
+        conv = ranks / max(n - 1, 1)                        # relative: per-horizon percentile [0,1]
         net = side * ((np.exp(yreal * sig) - 1.0) * 100.0) - cst
         move = (np.exp(ph * sig) - 1.0) * 100.0             # predicted signed % move
-        snr = absp / (pstd_vn[:, h - 1] + EPS)              # поточечний: clarity / seed-agreement
+        snr = absp / (pstd_vn[:, h - 1] + EPS)              # pointwise: clarity / seed-agreement
         persist = (signmat[:, j:] == signmat[:, j:j + 1]).mean(axis=1)
         for i in range(n):
             legs.append([sidx(str(syms_col[i])), int(tmin[i]), int(h), int(side[i]),
@@ -141,7 +141,7 @@ def main() -> None:
           "syms": tt_syms, "eq": [1 if is_equity(s) else 0 for s in tt_syms], "legs": legs}
 
     ex = _existing_lines()
-    sims = json.loads(ex.get("window.SIMS", "{}")); sims.pop("ТТ крива", None)   # drop the legacy wedged sim
+    sims = json.loads(ex.get("window.SIMS", "{}")); sims.pop("TT curve", None)   # drop the legacy wedged sim
     lines = []
     for key in PRESERVE:
         if key in ex:

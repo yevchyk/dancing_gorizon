@@ -1,4 +1,4 @@
-"""Model C — the "market listener" (загальний слухач ринку).
+"""Model C — the "market listener" (general market listener).
 
 Features are MARKET-WIDE, not per-symbol: BTC's own price curve at many lookbacks
 (where the market driver is) + BTC realized volatility (how turbulent). Predicts

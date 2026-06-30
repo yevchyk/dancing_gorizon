@@ -9,7 +9,7 @@ trusted-cost. net per leg = signed ret - thr_pct, where thr_pct is the row's
 honest per-symbol cost incl funding — bit-consistent with the labels.
 
 Reads the freshest dataset available: data/binance_now/dataset (rebuilt to "now"
-by the panel's "докачати + ребілд до зараз" button) when present, otherwise the
+by the panel's "fetch + rebuild to now" button) when present, otherwise the
 static data/binance_y1/dataset. v5 models read their v5 dataset.
 
 Scores every COMPLETED seed (metrics.json present) under each model dir and

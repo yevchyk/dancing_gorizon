@@ -11,7 +11,7 @@ probability that a trade clears its cost — then trades only the high-convictio
 [![CatBoost](https://img.shields.io/badge/model-CatBoost-yellow.svg)](https://catboost.ai/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
-[![Stars](https://img.shields.io/github/stars/yevchyk/dancing-horizon?style=social)](https://github.com/yevchyk/dancing-horizon/stargazers)
+[![Stars](https://img.shields.io/github/stars/yevchyk/dancing_gorizon?style=social)](https://github.com/yevchyk/dancing_gorizon/stargazers)
 
 **If this project teaches you something, please ⭐ star it — it genuinely helps.**
 
@@ -30,8 +30,8 @@ probability that a trade clears its cost — then trades only the high-convictio
   on the high-conviction tail, out-of-sample.
 
 ```bash
-git clone https://github.com/yevchyk/dancing-horizon.git
-cd dancing-horizon
+git clone https://github.com/yevchyk/dancing_gorizon.git
+cd dancing_gorizon
 python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 # score the bundled model on live public market data — no API keys needed:
 .venv/Scripts/python -m src.run_hc_live --shadow --once --selection-mode quality --model-dir models/hc_exec_to20260604_prod
@@ -242,8 +242,8 @@ All Python dependencies are pinned in [`requirements.txt`](requirements.txt).
 
 ```bash
 # 1. clone
-git clone https://github.com/yevchyk/dancing-horizon.git
-cd dancing-horizon
+git clone https://github.com/yevchyk/dancing_gorizon.git
+cd dancing_gorizon
 
 # 2. create an isolated environment
 python -m venv .venv

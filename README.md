@@ -434,6 +434,27 @@ want to understand the project's reasoning, read those.
 
 ---
 
+## 🌀 Beyond classification: regressing the whole price curve (Dancing Taras)
+
+The next paradigm (spec in [`DANCING_TARAS.md`](DANCING_TARAS.md)) stops predicting a single
+`P(profit)` and instead **regresses the entire forward price curve** as a multi-output
+target, with the horizon as the *output* axis. The explorer has a dedicated tab for it,
+including the most important tool in the whole project: an **IN-SAMPLE vs unseen HOLDOUT**
+split that makes overfitting impossible to hide.
+
+<div align="center">
+
+![Dancing Horizon — the curve-model (Dancing Taras) tab with IN-SAMPLE vs HOLDOUT honesty](docs/tt.png)
+
+*The curve model, judged honestly: 55% win-rate in-sample vs 42% on the unseen holdout —
+the tab tells you immediately that **this particular model is overfit**. Curve-native
+filters (conviction, SNR, |move|, persistence) and a per-horizon IS|HO table come for free
+from regressing the shape instead of a scalar.*
+
+</div>
+
+---
+
 ## ❓ FAQ
 
 **Is this profitable / can I just run it and make money?**

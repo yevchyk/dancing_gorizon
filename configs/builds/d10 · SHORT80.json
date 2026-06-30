@@ -1,0 +1,45 @@
+{
+  "name": "d10 · SHORT80",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d10",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "лише шорти, p_dir>=0.80 — наш едж · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "side",
+          "value": "short"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.8
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 213,
+    "winrate_pct": 54.0,
+    "avg_net_pct": -0.712,
+    "total_usd": -22.75,
+    "usd_per_day": -1.9,
+    "max_concurrent": 20
+  }
+}

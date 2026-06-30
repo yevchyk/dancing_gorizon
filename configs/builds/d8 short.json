@@ -1,0 +1,101 @@
+{
+  "name": "d8 short)",
+  "folder": "nice",
+  "sim": "🤫 d8 (екзамен)",
+  "mode": "unit",
+  "notional": 15,
+  "floor": 0.55,
+  "period": {
+    "fromAgoH": 48,
+    "toAgoH": 0
+  },
+  "reverse": false,
+  "one_pos": true,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 12,
+    "top_per_scan": 10,
+    "cooldown_min": 30
+  },
+  "banned": [
+    "BLESS_USDT_SWAP",
+    "BSB_USDT_SWAP",
+    "PORTAL_USDT_SWAP",
+    "LAB_USDT_SWAP",
+    "ALLO_USDT_SWAP",
+    "PIPPIN_USDT_SWAP",
+    "SAHARA_USDT_SWAP",
+    "SKYAI_USDT_SWAP",
+    "BIO_USDT_SWAP",
+    "BEAT_USDT_SWAP",
+    "JCT_USDT_SWAP",
+    "GENIUS_USDT_SWAP",
+    "ROBO_USDT_SWAP",
+    "EVAA_USDT_SWAP",
+    "FF_USDT_SWAP",
+    "SNDK_USDT_SWAP",
+    "VELVET_USDT_SWAP",
+    "EDEN_USDT_SWAP",
+    "HOME_USDT_SWAP",
+    "ESPORTS_USDT_SWAP",
+    "H_USDT_SWAP",
+    "EPIC_USDT_SWAP",
+    "WLD_USDT_SWAP",
+    "UB_USDT_SWAP",
+    "OP_USDT_SWAP",
+    "GUA_USDT_SWAP",
+    "AIGENSYN_USDT_SWAP"
+  ],
+  "description": "",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "side",
+          "value": "short"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.68
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "horizon",
+          "value": [
+            70,
+            75,
+            80,
+            85,
+            90,
+            95,
+            100,
+            105,
+            65,
+            60,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 209,
+    "winrate_pct": 74.2,
+    "avg_net_pct": 0.996,
+    "total_usd": 31.22,
+    "usd_per_day": 15.61,
+    "max_concurrent": 71
+  }
+}

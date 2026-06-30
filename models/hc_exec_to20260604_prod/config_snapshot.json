@@ -1,0 +1,125 @@
+{
+  "store_key": "crypto_feature",
+  "btc_symbol": "BTC_USDT_SWAP",
+  "hc_era_start": "2025-09-27T00:00:00+00:00",
+  "n_points": 30,
+  "expected_feature_count": 302,
+  "sample_stride_min": 120,
+  "exec_entry_delay_min": 5,
+  "embargo_min": 180,
+  "test_days": 7,
+  "validation_fraction": 0.1,
+  "horizon_anchors": [
+    5,
+    15,
+    30,
+    60,
+    120,
+    180
+  ],
+  "random_horizons_per_snapshot": 2,
+  "random_horizon_step_min": 5,
+  "threshold_grid_pct": {
+    "5": 0.4,
+    "15": 0.6,
+    "30": 0.8,
+    "60": 1.1,
+    "120": 1.5,
+    "180": 1.8
+  },
+  "round_trip_fee_pct": 0.15,
+  "decision_prob_high": 0.7,
+  "decision_prob_low": 0.3,
+  "timeframes": [
+    {
+      "key": "5m",
+      "freq": "5min",
+      "features": [
+        "rel",
+        "vol"
+      ],
+      "expected_5m_bars": null
+    },
+    {
+      "key": "15m",
+      "freq": "15min",
+      "features": [
+        "rel",
+        "vol"
+      ],
+      "expected_5m_bars": 3
+    },
+    {
+      "key": "1h",
+      "freq": "1h",
+      "features": [
+        "rel",
+        "btc",
+        "vol"
+      ],
+      "expected_5m_bars": 12
+    },
+    {
+      "key": "4h",
+      "freq": "4h",
+      "features": [
+        "rel",
+        "btc",
+        "vol"
+      ],
+      "expected_5m_bars": 48
+    }
+  ],
+  "model_params": {
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "task_type": "GPU",
+    "devices": "0",
+    "iterations": 4000,
+    "learning_rate": 0.05,
+    "depth": 6,
+    "l2_leaf_reg": 3.0,
+    "random_seed": 42,
+    "od_type": "Iter",
+    "od_wait": 200,
+    "allow_writing_files": false,
+    "border_count": 32,
+    "gpu_ram_part": 0.5
+  },
+  "folds": [
+    {
+      "name": "prod_to_20260604_seed42",
+      "test_start": "2026-06-04T21:00:00+00:00",
+      "test_end": "2026-06-04T21:00:00+00:00",
+      "purpose": "production_live",
+      "reason": "final fit uses all rows with known targets up to cutoff",
+      "btc_return_pct": null,
+      "btc_range_pct": null
+    }
+  ],
+  "fold_plan": "production_cutoff",
+  "cutoff_utc": "2026-06-04T21:00:00+00:00",
+  "validation_used_for_iteration_only": true,
+  "actual_model_params": {
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "task_type": "GPU",
+    "devices": "0",
+    "iterations": 6000,
+    "learning_rate": 0.045,
+    "depth": 6,
+    "l2_leaf_reg": 4.0,
+    "random_seed": 42,
+    "od_type": "Iter",
+    "od_wait": 300,
+    "allow_writing_files": false,
+    "border_count": 32,
+    "gpu_ram_part": 0.85,
+    "verbose": 200
+  },
+  "rows": 10097148,
+  "symbols": 218,
+  "base_time_min": "2025-10-02T16:00:00+00:00",
+  "base_time_max": "2026-06-04T20:00:00+00:00",
+  "target_end_max": "2026-06-04T21:00:00+00:00"
+}

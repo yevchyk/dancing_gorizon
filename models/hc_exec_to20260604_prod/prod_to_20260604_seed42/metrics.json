@@ -1,0 +1,40 @@
+{
+  "fold": {
+    "name": "prod_to_20260604_seed42",
+    "test_start": "2026-06-04T21:00:00+00:00",
+    "test_end": "2026-06-04T21:00:00+00:00",
+    "purpose": "production_live",
+    "reason": "final fit uses all rows with known targets up to cutoff",
+    "btc_return_pct": null,
+    "btc_range_pct": null
+  },
+  "cutoff_utc": "2026-06-04T21:00:00+00:00",
+  "val_start": "2026-05-11T08:00:00+00:00",
+  "n_eligible": 10097148,
+  "n_train_for_iteration": 9068527,
+  "n_val_for_iteration": 1021613,
+  "models": {
+    "up": {
+      "label": "up_label",
+      "val_auc": 0.838260625000937,
+      "train_pos_rate": 0.09456662586989045,
+      "val_pos_rate": 0.08109332986169909,
+      "eligible_pos_rate": 0.09320552694681707,
+      "best_iteration": 5989,
+      "n_train_for_iteration": 9068527,
+      "n_val_for_iteration": 1021613,
+      "n_final_fit": 10097148
+    },
+    "down": {
+      "label": "down_label",
+      "val_auc": 0.8236476032235374,
+      "train_pos_rate": 0.09986230398828828,
+      "val_pos_rate": 0.09643181909392304,
+      "eligible_pos_rate": 0.09947125663603228,
+      "best_iteration": 2585,
+      "n_train_for_iteration": 9068527,
+      "n_val_for_iteration": 1021613,
+      "n_final_fit": 10097148
+    }
+  }
+}

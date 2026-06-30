@@ -1,0 +1,1200 @@
+{
+  "symbols": {
+    "BTC_USDT_SWAP": {
+      "med_abs_pct": 0.00428,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00322,
+      "n": 1095
+    },
+    "ETH_USDT_SWAP": {
+      "med_abs_pct": 0.00454,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00268,
+      "n": 1095
+    },
+    "ZEC_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.0631,
+      "mean_pct": -0.00704,
+      "n": 1095
+    },
+    "SOL_USDT_SWAP": {
+      "med_abs_pct": 0.0063,
+      "p95_abs_pct": 0.01813,
+      "mean_pct": -0.00097,
+      "n": 1095
+    },
+    "XAU_USDT_SWAP": {
+      "med_abs_pct": 0.00483,
+      "p95_abs_pct": 0.07818,
+      "mean_pct": 0.00794,
+      "n": 1100
+    },
+    "XAG_USDT_SWAP": {
+      "med_abs_pct": 0.00451,
+      "p95_abs_pct": 0.11767,
+      "mean_pct": 0.01387,
+      "n": 938
+    },
+    "MU_USDT_SWAP": {
+      "med_abs_pct": 0.01502,
+      "p95_abs_pct": 0.1896,
+      "mean_pct": 0.02686,
+      "n": 199
+    },
+    "HYPE_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01489,
+      "mean_pct": 0.00397,
+      "n": 2190
+    },
+    "SNDK_USDT_SWAP": {
+      "med_abs_pct": 0.00553,
+      "p95_abs_pct": 0.12499,
+      "mean_pct": 0.01242,
+      "n": 199
+    },
+    "SOXL_USDT_SWAP": {
+      "med_abs_pct": 0.00392,
+      "p95_abs_pct": 0.22542,
+      "mean_pct": 0.03267,
+      "n": 87
+    },
+    "MRVL_USDT_SWAP": {
+      "med_abs_pct": 0.00585,
+      "p95_abs_pct": 0.13056,
+      "mean_pct": 0.03216,
+      "n": 87
+    },
+    "CL_USDT_SWAP": {
+      "med_abs_pct": 0.01297,
+      "p95_abs_pct": 0.24427,
+      "mean_pct": -0.01701,
+      "n": 440
+    },
+    "XRP_USDT_SWAP": {
+      "med_abs_pct": 0.00573,
+      "p95_abs_pct": 0.01367,
+      "mean_pct": 0.00147,
+      "n": 1095
+    },
+    "WLD_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.04549,
+      "mean_pct": -0.00358,
+      "n": 1095
+    },
+    "BEAT_USDT_SWAP": {
+      "med_abs_pct": 0.01209,
+      "p95_abs_pct": 0.25294,
+      "mean_pct": -0.03148,
+      "n": 1609
+    },
+    "H_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.16746,
+      "mean_pct": -0.02315,
+      "n": 2473
+    },
+    "VELVET_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.05153,
+      "mean_pct": 0.01312,
+      "n": 1993
+    },
+    "NEAR_USDT_SWAP": {
+      "med_abs_pct": 0.00936,
+      "p95_abs_pct": 0.01506,
+      "mean_pct": 0.00273,
+      "n": 1095
+    },
+    "DOGE_USDT_SWAP": {
+      "med_abs_pct": 0.00619,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00306,
+      "n": 1095
+    },
+    "BTW_USDT_SWAP": {
+      "med_abs_pct": 0.0409,
+      "p95_abs_pct": 0.08362,
+      "mean_pct": 0.03729,
+      "n": 48
+    },
+    "BNB_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.01211,
+      "mean_pct": 0.00114,
+      "n": 1095
+    },
+    "BZ_USDT_SWAP": {
+      "med_abs_pct": 0.01125,
+      "p95_abs_pct": 0.25013,
+      "mean_pct": -0.00627,
+      "n": 440
+    },
+    "INTC_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.16527,
+      "mean_pct": 0.00571,
+      "n": 391
+    },
+    "QQQ_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.11723,
+      "mean_pct": -0.00453,
+      "n": 211
+    },
+    "ALLO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02072,
+      "mean_pct": -0.00169,
+      "n": 1279
+    },
+    "EWY_USDT_SWAP": {
+      "med_abs_pct": 0.00092,
+      "p95_abs_pct": 0.1698,
+      "mean_pct": -0.01087,
+      "n": 274
+    },
+    "SKHYNIX_USDT_SWAP": {
+      "med_abs_pct": 0.14454,
+      "p95_abs_pct": 0.47977,
+      "mean_pct": 0.04434,
+      "n": 31
+    },
+    "SAHARA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.18757,
+      "mean_pct": -0.03461,
+      "n": 2942
+    },
+    "ADA_USDT_SWAP": {
+      "med_abs_pct": 0.00803,
+      "p95_abs_pct": 0.01306,
+      "mean_pct": 0.00306,
+      "n": 1095
+    },
+    "LAB_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.24367,
+      "mean_pct": -0.02451,
+      "n": 1545
+    },
+    "1000PEPE_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02751,
+      "mean_pct": 0.00033,
+      "n": 1095
+    },
+    "SIREN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.14207,
+      "mean_pct": -0.01604,
+      "n": 2659
+    },
+    "ENA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02921,
+      "mean_pct": -0.00238,
+      "n": 2190
+    },
+    "SLX_USDT_SWAP": {
+      "med_abs_pct": 0.03188,
+      "p95_abs_pct": 0.69057,
+      "mean_pct": -0.14751,
+      "n": 68
+    },
+    "SPCX_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.005,
+      "mean_pct": 0.005,
+      "n": 66
+    },
+    "SUI_USDT_SWAP": {
+      "med_abs_pct": 0.00571,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.0035,
+      "n": 1095
+    },
+    "CRCL_USDT_SWAP": {
+      "med_abs_pct": 0.02105,
+      "p95_abs_pct": 0.29432,
+      "mean_pct": 0.01701,
+      "n": 378
+    },
+    "DRAM_USDT_SWAP": {
+      "med_abs_pct": 0.02055,
+      "p95_abs_pct": 0.12076,
+      "mean_pct": 0.0286,
+      "n": 76
+    },
+    "HOME_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.33951,
+      "mean_pct": -0.03941,
+      "n": 2331
+    },
+    "ESPORTS_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07656,
+      "mean_pct": 0.01682,
+      "n": 1909
+    },
+    "STG_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.07697,
+      "mean_pct": -0.01399,
+      "n": 1095
+    },
+    "POWER_USDT_SWAP": {
+      "med_abs_pct": 0.02653,
+      "p95_abs_pct": 0.22802,
+      "mean_pct": -0.01689,
+      "n": 1314
+    },
+    "XLM_USDT_SWAP": {
+      "med_abs_pct": 0.00829,
+      "p95_abs_pct": 0.02292,
+      "mean_pct": -0.00138,
+      "n": 1095
+    },
+    "PAXG_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00516,
+      "mean_pct": 0.0022,
+      "n": 2190
+    },
+    "BCH_USDT_SWAP": {
+      "med_abs_pct": 0.00811,
+      "p95_abs_pct": 0.02864,
+      "mean_pct": -0.0032,
+      "n": 1095
+    },
+    "ONDO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01209,
+      "mean_pct": 0.00012,
+      "n": 2190
+    },
+    "FIL_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02879,
+      "mean_pct": -0.00093,
+      "n": 1095
+    },
+    "MSTR_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.38828,
+      "mean_pct": 0.0015,
+      "n": 378
+    },
+    "NVDA_USDT_SWAP": {
+      "med_abs_pct": 0.01282,
+      "p95_abs_pct": 0.19211,
+      "mean_pct": 0.00608,
+      "n": 247
+    },
+    "SENT_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.29586,
+      "mean_pct": -0.07055,
+      "n": 1739
+    },
+    "LINK_USDT_SWAP": {
+      "med_abs_pct": 0.0073,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.0044,
+      "n": 1095
+    },
+    "AVAX_USDT_SWAP": {
+      "med_abs_pct": 0.00851,
+      "p95_abs_pct": 0.02259,
+      "mean_pct": 1e-05,
+      "n": 1095
+    },
+    "BSB_USDT_SWAP": {
+      "med_abs_pct": 0.00708,
+      "p95_abs_pct": 0.08504,
+      "mean_pct": 0.01012,
+      "n": 475
+    },
+    "TAO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0152,
+      "mean_pct": -0.00072,
+      "n": 2190
+    },
+    "TON_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0149,
+      "mean_pct": -0.00061,
+      "n": 2190
+    },
+    "CHZ_USDT_SWAP": {
+      "med_abs_pct": 0.00897,
+      "p95_abs_pct": 0.02562,
+      "mean_pct": 0.0,
+      "n": 1095
+    },
+    "PIPPIN_USDT_SWAP": {
+      "med_abs_pct": 0.03004,
+      "p95_abs_pct": 0.28129,
+      "mean_pct": -0.0418,
+      "n": 3527
+    },
+    "JCT_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0545,
+      "mean_pct": 0.0129,
+      "n": 1286
+    },
+    "CBRS_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.06115,
+      "mean_pct": 0.00951,
+      "n": 73
+    },
+    "MOVE_USDT_SWAP": {
+      "med_abs_pct": 0.00504,
+      "p95_abs_pct": 0.15465,
+      "mean_pct": -0.0366,
+      "n": 2226
+    },
+    "LIT_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.005,
+      "mean_pct": 0.00489,
+      "n": 1025
+    },
+    "PLAY_USDT_SWAP": {
+      "med_abs_pct": 0.00919,
+      "p95_abs_pct": 0.12626,
+      "mean_pct": 0.02002,
+      "n": 1923
+    },
+    "KAT_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.24967,
+      "mean_pct": -0.04478,
+      "n": 614
+    },
+    "LTC_USDT_SWAP": {
+      "med_abs_pct": 0.00527,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00348,
+      "n": 1095
+    },
+    "INJ_USDT_SWAP": {
+      "med_abs_pct": 0.00886,
+      "p95_abs_pct": 0.03346,
+      "mean_pct": -0.00779,
+      "n": 1095
+    },
+    "LITE_USDT_SWAP": {
+      "med_abs_pct": 0.0109,
+      "p95_abs_pct": 0.12951,
+      "mean_pct": 0.04736,
+      "n": 88
+    },
+    "TSLA_USDT_SWAP": {
+      "med_abs_pct": 0.00223,
+      "p95_abs_pct": 0.11836,
+      "mean_pct": 2e-05,
+      "n": 417
+    },
+    "AMD_USDT_SWAP": {
+      "med_abs_pct": 0.00712,
+      "p95_abs_pct": 0.1056,
+      "mean_pct": 0.0246,
+      "n": 112
+    },
+    "GUA_USDT_SWAP": {
+      "med_abs_pct": 0.02942,
+      "p95_abs_pct": 0.15026,
+      "mean_pct": 0.01461,
+      "n": 1130
+    },
+    "DOT_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.03469,
+      "mean_pct": -0.00449,
+      "n": 1095
+    },
+    "CHIP_USDT_SWAP": {
+      "med_abs_pct": 0.01919,
+      "p95_abs_pct": 0.18346,
+      "mean_pct": -0.05319,
+      "n": 344
+    },
+    "OPN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00601,
+      "mean_pct": 0.00317,
+      "n": 666
+    },
+    "SPY_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.08431,
+      "mean_pct": -0.0125,
+      "n": 211
+    },
+    "VVV_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07013,
+      "mean_pct": -0.01301,
+      "n": 2190
+    },
+    "JTO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.04653,
+      "mean_pct": -0.01039,
+      "n": 2190
+    },
+    "PUMP_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01654,
+      "mean_pct": 0.00533,
+      "n": 2065
+    },
+    "RKLB_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.09082,
+      "mean_pct": 0.0134,
+      "n": 76
+    },
+    "AAVE_USDT_SWAP": {
+      "med_abs_pct": 0.00536,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00311,
+      "n": 1095
+    },
+    "XAUT_USDT_SWAP": {
+      "med_abs_pct": 0.00252,
+      "p95_abs_pct": 0.005,
+      "mean_pct": 0.00192,
+      "n": 468
+    },
+    "QCOM_USDT_SWAP": {
+      "med_abs_pct": 0.00855,
+      "p95_abs_pct": 0.17114,
+      "mean_pct": 0.03223,
+      "n": 121
+    },
+    "TRX_USDT_SWAP": {
+      "med_abs_pct": 0.00875,
+      "p95_abs_pct": 0.03142,
+      "mean_pct": -0.00395,
+      "n": 1095
+    },
+    "AVGO_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.06948,
+      "mean_pct": 0.01091,
+      "n": 169
+    },
+    "ASTER_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01834,
+      "mean_pct": 0.00487,
+      "n": 1597
+    },
+    "GWEI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.05279,
+      "mean_pct": 0.01146,
+      "n": 806
+    },
+    "ARM_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.08156,
+      "mean_pct": 0.00668,
+      "n": 51
+    },
+    "SKYAI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07717,
+      "mean_pct": 0.01899,
+      "n": 2190
+    },
+    "AAOI_USDT_SWAP": {
+      "med_abs_pct": 0.06701,
+      "p95_abs_pct": 0.19865,
+      "mean_pct": 0.08819,
+      "n": 13
+    },
+    "MORPHO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0257,
+      "mean_pct": -0.00153,
+      "n": 2190
+    },
+    "IO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.05829,
+      "mean_pct": -0.01255,
+      "n": 2190
+    },
+    "TRUMP_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.03793,
+      "mean_pct": -0.00992,
+      "n": 2190
+    },
+    "DASH_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.12224,
+      "mean_pct": -0.02552,
+      "n": 1095
+    },
+    "FET_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.07619,
+      "mean_pct": -0.01265,
+      "n": 1095
+    },
+    "XMR_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.05968,
+      "mean_pct": 0.01743,
+      "n": 1095
+    },
+    "PENGU_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01955,
+      "mean_pct": -0.0014,
+      "n": 2190
+    },
+    "UNI_USDT_SWAP": {
+      "med_abs_pct": 0.00689,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00454,
+      "n": 1095
+    },
+    "FARTCOIN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01717,
+      "mean_pct": 0.00561,
+      "n": 2190
+    },
+    "ARB_USDT_SWAP": {
+      "med_abs_pct": 0.00803,
+      "p95_abs_pct": 0.01188,
+      "mean_pct": 0.00342,
+      "n": 1095
+    },
+    "NOK_USDT_SWAP": {
+      "med_abs_pct": 0.00675,
+      "p95_abs_pct": 0.27194,
+      "mean_pct": 0.03886,
+      "n": 34
+    },
+    "APT_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.08184,
+      "mean_pct": -0.01675,
+      "n": 1095
+    },
+    "OP_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02285,
+      "mean_pct": -0.00022,
+      "n": 1095
+    },
+    "EPIC_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01033,
+      "mean_pct": 0.00261,
+      "n": 2190
+    },
+    "ZEREBRO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0405,
+      "mean_pct": 0.01099,
+      "n": 2190
+    },
+    "GOOGL_USDT_SWAP": {
+      "med_abs_pct": 0.01137,
+      "p95_abs_pct": 0.16252,
+      "mean_pct": 0.01388,
+      "n": 247
+    },
+    "BLESS_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.04546,
+      "mean_pct": 0.01166,
+      "n": 1573
+    },
+    "WLFI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.04138,
+      "mean_pct": -0.00479,
+      "n": 1759
+    },
+    "XPL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00711,
+      "mean_pct": 0.0032,
+      "n": 1765
+    },
+    "BABY_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02678,
+      "mean_pct": -0.00703,
+      "n": 2238
+    },
+    "CRWV_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.09268,
+      "mean_pct": 0.01239,
+      "n": 76
+    },
+    "TSM_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.10681,
+      "mean_pct": 0.01154,
+      "n": 220
+    },
+    "TIA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0192,
+      "mean_pct": -0.00075,
+      "n": 2190
+    },
+    "AAPL_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.04346,
+      "mean_pct": 0.00418,
+      "n": 233
+    },
+    "SAMSUNG_USDT_SWAP": {
+      "med_abs_pct": 0.11981,
+      "p95_abs_pct": 0.39409,
+      "mean_pct": 0.02984,
+      "n": 31
+    },
+    "RENDER_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0112,
+      "mean_pct": 0.00049,
+      "n": 2190
+    },
+    "ICP_USDT_SWAP": {
+      "med_abs_pct": 0.0095,
+      "p95_abs_pct": 0.04403,
+      "mean_pct": -0.00737,
+      "n": 1095
+    },
+    "NATGAS_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.20182,
+      "mean_pct": 0.03439,
+      "n": 440
+    },
+    "AIGENSYN_USDT_SWAP": {
+      "med_abs_pct": 0.01801,
+      "p95_abs_pct": 0.12573,
+      "mean_pct": -0.02229,
+      "n": 264
+    },
+    "NBIS_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.20053,
+      "mean_pct": 0.03979,
+      "n": 51
+    },
+    "VIRTUAL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02364,
+      "mean_pct": -0.00294,
+      "n": 2190
+    },
+    "DEXE_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00609,
+      "mean_pct": 0.00366,
+      "n": 2190
+    },
+    "UB_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.05584,
+      "mean_pct": 0.01421,
+      "n": 1639
+    },
+    "1000SHIB_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02338,
+      "mean_pct": -0.00114,
+      "n": 1095
+    },
+    "WIF_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02076,
+      "mean_pct": -0.00222,
+      "n": 2190
+    },
+    "HOOD_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.21856,
+      "mean_pct": -0.00176,
+      "n": 391
+    },
+    "ZEST_USDT_SWAP": {
+      "med_abs_pct": 0.01953,
+      "p95_abs_pct": 0.07193,
+      "mean_pct": 0.02665,
+      "n": 48
+    },
+    "C_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.05797,
+      "mean_pct": -0.00761,
+      "n": 2121
+    },
+    "CLO_USDT_SWAP": {
+      "med_abs_pct": 0.01032,
+      "p95_abs_pct": 0.20422,
+      "mean_pct": -0.01797,
+      "n": 1553
+    },
+    "ATOM_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.04485,
+      "mean_pct": -0.01119,
+      "n": 1095
+    },
+    "COIN_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.34547,
+      "mean_pct": -0.00727,
+      "n": 378
+    },
+    "HBAR_USDT_SWAP": {
+      "med_abs_pct": 0.00702,
+      "p95_abs_pct": 0.0148,
+      "mean_pct": 0.00118,
+      "n": 1095
+    },
+    "CRV_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.01518,
+      "mean_pct": 0.00452,
+      "n": 1095
+    },
+    "ALGO_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02291,
+      "mean_pct": 0.00018,
+      "n": 1095
+    },
+    "RUNE_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.01937,
+      "mean_pct": 0.00355,
+      "n": 1095
+    },
+    "1000BONK_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01915,
+      "mean_pct": -0.00069,
+      "n": 2190
+    },
+    "ORDI_USDT_SWAP": {
+      "med_abs_pct": 0.0046,
+      "p95_abs_pct": 0.00512,
+      "mean_pct": 0.00207,
+      "n": 2190
+    },
+    "BIO_USDT_SWAP": {
+      "med_abs_pct": 0.00969,
+      "p95_abs_pct": 0.09189,
+      "mean_pct": -0.02737,
+      "n": 3002
+    },
+    "ORCL_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.04394,
+      "mean_pct": 0.0092,
+      "n": 88
+    },
+    "ETC_USDT_SWAP": {
+      "med_abs_pct": 0.00803,
+      "p95_abs_pct": 0.01497,
+      "mean_pct": 0.00233,
+      "n": 1095
+    },
+    "COPPER_USDT_SWAP": {
+      "med_abs_pct": 0.00213,
+      "p95_abs_pct": 0.05645,
+      "mean_pct": 0.00781,
+      "n": 596
+    },
+    "OPG_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0569,
+      "mean_pct": -0.00316,
+      "n": 306
+    },
+    "FOLKS_USDT_SWAP": {
+      "med_abs_pct": 0.00925,
+      "p95_abs_pct": 0.16012,
+      "mean_pct": -0.01145,
+      "n": 1666
+    },
+    "RAVE_USDT_SWAP": {
+      "med_abs_pct": 0.01406,
+      "p95_abs_pct": 0.36482,
+      "mean_pct": -0.03654,
+      "n": 1290
+    },
+    "SEI_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.05733,
+      "mean_pct": -0.01161,
+      "n": 1095
+    },
+    "IP_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.09876,
+      "mean_pct": -0.02144,
+      "n": 2761
+    },
+    "FIDA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07942,
+      "mean_pct": -0.01743,
+      "n": 2231
+    },
+    "FLNC_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.21656,
+      "mean_pct": 0.00396,
+      "n": 76
+    },
+    "HEI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.005,
+      "mean_pct": 0.00169,
+      "n": 2204
+    },
+    "GENIUS_USDT_SWAP": {
+      "med_abs_pct": 0.0072,
+      "p95_abs_pct": 0.1128,
+      "mean_pct": -0.00468,
+      "n": 345
+    },
+    "COHR_USDT_SWAP": {
+      "med_abs_pct": 0.01937,
+      "p95_abs_pct": 0.2542,
+      "mean_pct": 0.05025,
+      "n": 51
+    },
+    "XPT_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.0607,
+      "mean_pct": 0.01023,
+      "n": 799
+    },
+    "PORTAL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01857,
+      "mean_pct": -0.00264,
+      "n": 2190
+    },
+    "PENDLE_USDT_SWAP": {
+      "med_abs_pct": 0.00974,
+      "p95_abs_pct": 0.01581,
+      "mean_pct": 0.00331,
+      "n": 1095
+    },
+    "META_USDT_SWAP": {
+      "med_abs_pct": 0.0,
+      "p95_abs_pct": 0.10483,
+      "mean_pct": 0.00631,
+      "n": 238
+    },
+    "FF_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.03736,
+      "mean_pct": -0.00496,
+      "n": 1537
+    },
+    "1000LUNC_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.0544,
+      "mean_pct": -0.00925,
+      "n": 1095
+    },
+    "WAL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07187,
+      "mean_pct": -0.01609,
+      "n": 2190
+    },
+    "EVAA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0618,
+      "mean_pct": 0.01533,
+      "n": 1513
+    },
+    "1000RATS_USDT_SWAP": {
+      "med_abs_pct": 0.0083,
+      "p95_abs_pct": 0.05849,
+      "mean_pct": 0.01901,
+      "n": 2190
+    },
+    "OPEN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.18526,
+      "mean_pct": -0.03108,
+      "n": 1686
+    },
+    "MAGMA_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.04132,
+      "mean_pct": 0.01212,
+      "n": 978
+    },
+    "CTR_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.11657,
+      "mean_pct": -0.02172,
+      "n": 91
+    },
+    "STABLE_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.12693,
+      "mean_pct": -0.02833,
+      "n": 1325
+    },
+    "AR_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.0232,
+      "mean_pct": 0.00149,
+      "n": 1095
+    },
+    "RIVER_USDT_SWAP": {
+      "med_abs_pct": 0.01283,
+      "p95_abs_pct": 0.75535,
+      "mean_pct": -0.09569,
+      "n": 2460
+    },
+    "HAEDAL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01928,
+      "mean_pct": 1e-05,
+      "n": 2190
+    },
+    "POL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02341,
+      "mean_pct": -0.00344,
+      "n": 2190
+    },
+    "BANK_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.03541,
+      "mean_pct": 0.00868,
+      "n": 2190
+    },
+    "ZRO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.03417,
+      "mean_pct": -0.00601,
+      "n": 2190
+    },
+    "EIGEN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02342,
+      "mean_pct": -0.002,
+      "n": 2190
+    },
+    "ZBT_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07411,
+      "mean_pct": -0.01529,
+      "n": 1812
+    },
+    "MEME_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.03296,
+      "mean_pct": -0.00601,
+      "n": 2190
+    },
+    "LAYER_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07055,
+      "mean_pct": -0.01644,
+      "n": 3604
+    },
+    "JUP_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02358,
+      "mean_pct": -0.00357,
+      "n": 2190
+    },
+    "EDEN_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01019,
+      "mean_pct": -0.00191,
+      "n": 1532
+    },
+    "ROBO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.17512,
+      "mean_pct": -0.02437,
+      "n": 631
+    },
+    "AERGO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.14462,
+      "mean_pct": -0.03245,
+      "n": 2190
+    },
+    "STRK_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.02294,
+      "mean_pct": -0.00192,
+      "n": 2190
+    },
+    "PYTH_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01324,
+      "mean_pct": -0.00086,
+      "n": 2190
+    },
+    "COMP_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.06807,
+      "mean_pct": -0.01431,
+      "n": 1095
+    },
+    "LDO_USDT_SWAP": {
+      "med_abs_pct": 0.00564,
+      "p95_abs_pct": 0.01,
+      "mean_pct": 0.00322,
+      "n": 1095
+    },
+    "ETHFI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01453,
+      "mean_pct": 0.00047,
+      "n": 2190
+    },
+    "GALA_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.02283,
+      "mean_pct": 0.00265,
+      "n": 1095
+    },
+    "S_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00992,
+      "mean_pct": 0.00148,
+      "n": 2190
+    },
+    "KAS_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0118,
+      "mean_pct": 0.00308,
+      "n": 2190
+    },
+    "HYPER_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.07394,
+      "mean_pct": -0.02896,
+      "n": 2340
+    },
+    "APE_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.04574,
+      "mean_pct": -0.00632,
+      "n": 1095
+    },
+    "SAND_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.03198,
+      "mean_pct": -0.00129,
+      "n": 1095
+    },
+    "FORM_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.00674,
+      "mean_pct": 0.00492,
+      "n": 2190
+    },
+    "1000FLOKI_USDT_SWAP": {
+      "med_abs_pct": 0.00916,
+      "p95_abs_pct": 0.03799,
+      "mean_pct": -0.0071,
+      "n": 1095
+    },
+    "NEIRO_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01052,
+      "mean_pct": 0.00181,
+      "n": 2190
+    },
+    "SPX_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0207,
+      "mean_pct": 0.00056,
+      "n": 2190
+    },
+    "PARTI_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.06701,
+      "mean_pct": -0.01133,
+      "n": 2190
+    },
+    "NFP_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.005,
+      "mean_pct": 0.00246,
+      "n": 2190
+    },
+    "GRASS_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.04428,
+      "mean_pct": -0.0033,
+      "n": 2190
+    },
+    "AXS_USDT_SWAP": {
+      "med_abs_pct": 0.01,
+      "p95_abs_pct": 0.28298,
+      "mean_pct": -0.05756,
+      "n": 1689
+    },
+    "DOGS_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01596,
+      "mean_pct": -3e-05,
+      "n": 2190
+    },
+    "ME_USDT_SWAP": {
+      "med_abs_pct": 0.00636,
+      "p95_abs_pct": 0.05866,
+      "mean_pct": -0.02087,
+      "n": 3433
+    },
+    "ZEN_USDT_SWAP": {
+      "med_abs_pct": 0.00892,
+      "p95_abs_pct": 0.02711,
+      "mean_pct": 0.00124,
+      "n": 1095
+    },
+    "W_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.0176,
+      "mean_pct": -0.0004,
+      "n": 2190
+    },
+    "NIL_USDT_SWAP": {
+      "med_abs_pct": 0.005,
+      "p95_abs_pct": 0.01027,
+      "mean_pct": 0.00114,
+      "n": 2190
+    }
+  },
+  "universe_med_abs_pct": 0.005,
+  "method": "median |rate| per 8h event; adverse funding over hold h_min = med_abs_pct * h/480"
+}

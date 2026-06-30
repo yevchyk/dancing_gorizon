@@ -1,0 +1,37 @@
+{
+  "name": "d8 · RAW85",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d8",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "p_dir>=0.85 — якісніший хвіст · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.85
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 33,
+    "winrate_pct": 60.6,
+    "avg_net_pct": 0.234,
+    "total_usd": 1.16,
+    "usd_per_day": 0.1,
+    "max_concurrent": 20
+  }
+}

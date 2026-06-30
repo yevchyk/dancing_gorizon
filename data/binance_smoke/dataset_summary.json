@@ -1,0 +1,51 @@
+{
+  "out_dir": "data\\binance_smoke\\dataset",
+  "schema": "v4_binance_y1",
+  "store": "binance_feature",
+  "feature_columns": 305,
+  "labels": "per-symbol rt_cost + med_abs_funding*h/480 (configs/binance_costs.json + binance_funding.json)",
+  "anchors": [
+    30,
+    120,
+    480
+  ],
+  "h_grid": [
+    30,
+    480,
+    5
+  ],
+  "random_count": 3,
+  "stride_min": 60,
+  "grid_jitter": "per-symbol 0..55m (stable_seed(sym,7))",
+  "days": 5,
+  "entry_delay_min": 5,
+  "symbols_requested": 2,
+  "shards": 2,
+  "rows": 1440,
+  "valid_base_time_min": "2026-06-05T13:15:00+00:00",
+  "valid_base_time_max": "2026-06-10T12:25:00+00:00",
+  "stats": [
+    {
+      "symbol": "BTC_USDT_SWAP",
+      "status": "ok",
+      "rows": 720,
+      "anchors": 120,
+      "valid_anchors": 120,
+      "dropped_targets": 0,
+      "first_time": "2026-06-05T13:25:00+00:00",
+      "last_time": "2026-06-10T12:25:00+00:00",
+      "message": ""
+    },
+    {
+      "symbol": "ETH_USDT_SWAP",
+      "status": "ok",
+      "rows": 720,
+      "anchors": 120,
+      "valid_anchors": 120,
+      "dropped_targets": 0,
+      "first_time": "2026-06-05T13:15:00+00:00",
+      "last_time": "2026-06-10T12:15:00+00:00",
+      "message": ""
+    }
+  ]
+}

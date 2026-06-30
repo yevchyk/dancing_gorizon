@@ -1,0 +1,45 @@
+{
+  "name": "d8 · bdw",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d8",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "p_dir>=0.80 І p_opp<=0.05 — чистий напрямок · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.8
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "p_opp",
+          "value": 0.05
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 0,
+    "winrate_pct": 0,
+    "avg_net_pct": 0,
+    "total_usd": 0,
+    "usd_per_day": 0,
+    "max_concurrent": 0
+  }
+}

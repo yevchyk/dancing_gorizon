@@ -1,0 +1,37 @@
+{
+  "name": "d10 · SPREAD70",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d10",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "spread(p_dir-p_opp)>=0.70 · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "spread",
+          "value": 0.7
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 78,
+    "winrate_pct": 65.4,
+    "avg_net_pct": 1.188,
+    "total_usd": 13.9,
+    "usd_per_day": 1.16,
+    "max_concurrent": 20
+  }
+}

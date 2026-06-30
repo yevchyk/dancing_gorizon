@@ -1,0 +1,481 @@
+{
+  "store": "crypto_feature",
+  "store_dir": "C:\\ml\\ml_predictor_v2\\data\\candles",
+  "generated_at_utc": "2026-06-04T17:58:51.716430+00:00",
+  "expected_count": 218,
+  "actual_count": 218,
+  "blacklist_count": 25,
+  "symbols": [
+    "0G_USDT_SWAP",
+    "1INCH_USDT_SWAP",
+    "2Z_USDT_SWAP",
+    "AAVE_USDT_SWAP",
+    "ACH_USDT_SWAP",
+    "ACT_USDT_SWAP",
+    "ADA_USDT_SWAP",
+    "AERO_USDT_SWAP",
+    "AEVO_USDT_SWAP",
+    "AGLD_USDT_SWAP",
+    "AIXBT_USDT_SWAP",
+    "ALGO_USDT_SWAP",
+    "ALLO_USDT_SWAP",
+    "ANIME_USDT_SWAP",
+    "APE_USDT_SWAP",
+    "API3_USDT_SWAP",
+    "APR_USDT_SWAP",
+    "APT_USDT_SWAP",
+    "ARB_USDT_SWAP",
+    "ARKM_USDT_SWAP",
+    "AR_USDT_SWAP",
+    "ASTER_USDT_SWAP",
+    "ATH_USDT_SWAP",
+    "ATOM_USDT_SWAP",
+    "AT_USDT_SWAP",
+    "AUCTION_USDT_SWAP",
+    "AVAX_USDT_SWAP",
+    "AVNT_USDT_SWAP",
+    "AXS_USDT_SWAP",
+    "A_USDT_SWAP",
+    "BABY_USDT_SWAP",
+    "BAND_USDT_SWAP",
+    "BARD_USDT_SWAP",
+    "BAT_USDT_SWAP",
+    "BCH_USDT_SWAP",
+    "BEAT_USDT_SWAP",
+    "BERA_USDT_SWAP",
+    "BICO_USDT_SWAP",
+    "BIGTIME_USDT_SWAP",
+    "BIO_USDT_SWAP",
+    "BLUR_USDT_SWAP",
+    "BNB_USDT_SWAP",
+    "BOME_USDT_SWAP",
+    "BONK_USDT_SWAP",
+    "BRETT_USDT_SWAP",
+    "BTC_USDT_SWAP",
+    "CC_USDT_SWAP",
+    "CELO_USDT_SWAP",
+    "CFX_USDT_SWAP",
+    "CHZ_USDT_SWAP",
+    "COAI_USDT_SWAP",
+    "COMP_USDT_SWAP",
+    "CORE_USDT_SWAP",
+    "CRO_USDT_SWAP",
+    "CRV_USDT_SWAP",
+    "CVX_USDT_SWAP",
+    "DASH_USDT_SWAP",
+    "DOGE_USDT_SWAP",
+    "DOOD_USDT_SWAP",
+    "DOT_USDT_SWAP",
+    "DYDX_USDT_SWAP",
+    "EGLD_USDT_SWAP",
+    "EIGEN_USDT_SWAP",
+    "ENA_USDT_SWAP",
+    "ENJ_USDT_SWAP",
+    "ENSO_USDT_SWAP",
+    "ENS_USDT_SWAP",
+    "ETC_USDT_SWAP",
+    "ETHFI_USDT_SWAP",
+    "ETHW_USDT_SWAP",
+    "ETH_USDT_SWAP",
+    "FARTCOIN_USDT_SWAP",
+    "FIL_USDT_SWAP",
+    "FLOKI_USDT_SWAP",
+    "FLOW_USDT_SWAP",
+    "F_USDT_SWAP",
+    "GALA_USDT_SWAP",
+    "GAS_USDT_SWAP",
+    "GLM_USDT_SWAP",
+    "GMT_USDT_SWAP",
+    "GMX_USDT_SWAP",
+    "GPS_USDT_SWAP",
+    "GRT_USDT_SWAP",
+    "HBAR_USDT_SWAP",
+    "HMSTR_USDT_SWAP",
+    "HOME_USDT_SWAP",
+    "HUMA_USDT_SWAP",
+    "H_USDT_SWAP",
+    "ICP_USDT_SWAP",
+    "ICX_USDT_SWAP",
+    "IMX_USDT_SWAP",
+    "INIT_USDT_SWAP",
+    "IOST_USDT_SWAP",
+    "IOTA_USDT_SWAP",
+    "IP_USDT_SWAP",
+    "JELLYJELLY_USDT_SWAP",
+    "JUP_USDT_SWAP",
+    "KAITO_USDT_SWAP",
+    "KGEN_USDT_SWAP",
+    "KMNO_USDT_SWAP",
+    "KSM_USDT_SWAP",
+    "LAYER_USDT_SWAP",
+    "LA_USDT_SWAP",
+    "LDO_USDT_SWAP",
+    "LINEA_USDT_SWAP",
+    "LINK_USDT_SWAP",
+    "LPT_USDT_SWAP",
+    "LQTY_USDT_SWAP",
+    "LRC_USDT_SWAP",
+    "LTC_USDT_SWAP",
+    "LUNA_USDT_SWAP",
+    "MAGIC_USDT_SWAP",
+    "MANA_USDT_SWAP",
+    "MASK_USDT_SWAP",
+    "MEME_USDT_SWAP",
+    "MERL_USDT_SWAP",
+    "METIS_USDT_SWAP",
+    "MET_USDT_SWAP",
+    "MEW_USDT_SWAP",
+    "ME_USDT_SWAP",
+    "MINA_USDT_SWAP",
+    "MON_USDT_SWAP",
+    "MOODENG_USDT_SWAP",
+    "MORPHO_USDT_SWAP",
+    "MOVE_USDT_SWAP",
+    "MUBARAK_USDT_SWAP",
+    "NEAR_USDT_SWAP",
+    "NEIRO_USDT_SWAP",
+    "NEO_USDT_SWAP",
+    "NMR_USDT_SWAP",
+    "NOT_USDT_SWAP",
+    "OKB_USDT_SWAP",
+    "OL_USDT_SWAP",
+    "ONDO_USDT_SWAP",
+    "ONE_USDT_SWAP",
+    "ONT_USDT_SWAP",
+    "OP_USDT_SWAP",
+    "ORDER_USDT_SWAP",
+    "ORDI_USDT_SWAP",
+    "PARTI_USDT_SWAP",
+    "PENDLE_USDT_SWAP",
+    "PENGU_USDT_SWAP",
+    "PEOPLE_USDT_SWAP",
+    "PEPE_USDT_SWAP",
+    "PI_USDT_SWAP",
+    "PLUME_USDT_SWAP",
+    "PNUT_USDT_SWAP",
+    "POL_USDT_SWAP",
+    "POPCAT_USDT_SWAP",
+    "PROVE_USDT_SWAP",
+    "PUMP_USDT_SWAP",
+    "PYTH_USDT_SWAP",
+    "QTUM_USDT_SWAP",
+    "RAY_USDT_SWAP",
+    "RECALL_USDT_SWAP",
+    "RENDER_USDT_SWAP",
+    "RESOLV_USDT_SWAP",
+    "RSR_USDT_SWAP",
+    "RVN_USDT_SWAP",
+    "SAHARA_USDT_SWAP",
+    "SAND_USDT_SWAP",
+    "SAPIEN_USDT_SWAP",
+    "SATS_USDT_SWAP",
+    "SEI_USDT_SWAP",
+    "SHELL_USDT_SWAP",
+    "SHIB_USDT_SWAP",
+    "SIGN_USDT_SWAP",
+    "SKY_USDT_SWAP",
+    "SNX_USDT_SWAP",
+    "SOL_USDT_SWAP",
+    "SOON_USDT_SWAP",
+    "SOPH_USDT_SWAP",
+    "SPK_USDT_SWAP",
+    "SSV_USDT_SWAP",
+    "STRK_USDT_SWAP",
+    "STX_USDT_SWAP",
+    "SUI_USDT_SWAP",
+    "SUSHI_USDT_SWAP",
+    "SYRUP_USDT_SWAP",
+    "S_USDT_SWAP",
+    "TAO_USDT_SWAP",
+    "THETA_USDT_SWAP",
+    "TIA_USDT_SWAP",
+    "TON_USDT_SWAP",
+    "TRB_USDT_SWAP",
+    "TRUMP_USDT_SWAP",
+    "TRUST_USDT_SWAP",
+    "TRX_USDT_SWAP",
+    "TURBO_USDT_SWAP",
+    "UMA_USDT_SWAP",
+    "UNI_USDT_SWAP",
+    "USDC_USDT_SWAP",
+    "USELESS_USDT_SWAP",
+    "VANA_USDT_SWAP",
+    "VIRTUAL_USDT_SWAP",
+    "WAL_USDT_SWAP",
+    "WCT_USDT_SWAP",
+    "WIF_USDT_SWAP",
+    "WLFI_USDT_SWAP",
+    "WOO_USDT_SWAP",
+    "W_USDT_SWAP",
+    "XAU_USDT_SWAP",
+    "XLM_USDT_SWAP",
+    "XPL_USDT_SWAP",
+    "XRP_USDT_SWAP",
+    "XTZ_USDT_SWAP",
+    "YB_USDT_SWAP",
+    "YFI_USDT_SWAP",
+    "YGG_USDT_SWAP",
+    "ZBT_USDT_SWAP",
+    "ZEC_USDT_SWAP",
+    "ZEN_USDT_SWAP",
+    "ZETA_USDT_SWAP",
+    "ZIL_USDT_SWAP",
+    "ZK_USDT_SWAP",
+    "ZORA_USDT_SWAP",
+    "ZRO_USDT_SWAP",
+    "ZRX_USDT_SWAP"
+  ],
+  "rejected_count": 108,
+  "rejected_sample": [
+    {
+      "symbol": "AAPL_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 87.157
+    },
+    {
+      "symbol": "ACU_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 127.209
+    },
+    {
+      "symbol": "AI_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 31.001
+    },
+    {
+      "symbol": "AMD_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 81.423
+    },
+    {
+      "symbol": "AMZN_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 93.189
+    },
+    {
+      "symbol": "ANTHROPIC_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 23.106
+    },
+    {
+      "symbol": "ARM_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 32.579
+    },
+    {
+      "symbol": "AVGO_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 33.256
+    },
+    {
+      "symbol": "AZTEC_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 108.065
+    },
+    {
+      "symbol": "BASED_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 63.071
+    },
+    {
+      "symbol": "BILL_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 24.17
+    },
+    {
+      "symbol": "BLEND_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 31.087
+    },
+    {
+      "symbol": "BMNR_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 32.879
+    },
+    {
+      "symbol": "BREV_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 155.014
+    },
+    {
+      "symbol": "BSB_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 58.087
+    },
+    {
+      "symbol": "BZ_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 69.393
+    },
+    {
+      "symbol": "CBRS_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 16.59
+    },
+    {
+      "symbol": "CHIP_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 38.922
+    },
+    {
+      "symbol": "CL_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 89.299
+    },
+    {
+      "symbol": "COHR_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 17.088
+    },
+    {
+      "symbol": "COIN_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 93.182
+    },
+    {
+      "symbol": "COST_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 32.912
+    },
+    {
+      "symbol": "CRCL_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 97.224
+    },
+    {
+      "symbol": "CRWV_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 52.008
+    },
+    {
+      "symbol": "CSCO_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 11.102
+    },
+    {
+      "symbol": "DRAM_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 24.435
+    },
+    {
+      "symbol": "EDEN_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 246.076
+    },
+    {
+      "symbol": "EDGE_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 55.285
+    },
+    {
+      "symbol": "ESP_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 105.181
+    },
+    {
+      "symbol": "EWJ_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 76.421
+    },
+    {
+      "symbol": "EWY_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 82.069
+    },
+    {
+      "symbol": "FOGO_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 138.771
+    },
+    {
+      "symbol": "GEV_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 5.476
+    },
+    {
+      "symbol": "GIGGLE_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 221.265
+    },
+    {
+      "symbol": "GLW_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 8.474
+    },
+    {
+      "symbol": "GME_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 18.453
+    },
+    {
+      "symbol": "GOOGL_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 84.908
+    },
+    {
+      "symbol": "GRASS_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 250.078
+    },
+    {
+      "symbol": "HIMS_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 29.234
+    },
+    {
+      "symbol": "HOOD_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 90.557
+    },
+    {
+      "symbol": "HYPE_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 250.092
+    },
+    {
+      "symbol": "INJ_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 250.064
+    },
+    {
+      "symbol": "INTC_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 97.265
+    },
+    {
+      "symbol": "IWM_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 46.349
+    },
+    {
+      "symbol": "JTO_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 250.036
+    },
+    {
+      "symbol": "KAT_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 85.369
+    },
+    {
+      "symbol": "KITE_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 47.724
+    },
+    {
+      "symbol": "LAB_USDT_SWAP",
+      "reason": "blacklist",
+      "fine_days": 209.01
+    },
+    {
+      "symbol": "LIGHT_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 169.222
+    },
+    {
+      "symbol": "LIT_USDT_SWAP",
+      "reason": "fine_days_lt_200",
+      "fine_days": 161.411
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "binance d12 short",
+  "folder": "binance перші (06-11)",
+  "sim": "🤫 d8 (екзамен)",
+  "mode": "unit",
+  "notional": 15,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "exit_policy": null,
+  "book": {
+    "max_concurrent": 12,
+    "top_per_scan": 10,
+    "cooldown_min": 30
+  },
+  "banned": [
+    "LAB_USDT_SWAP",
+    "EPIC_USDT_SWAP",
+    "CLO_USDT_SWAP",
+    "MAGMA_USDT_SWAP",
+    "HOME_USDT_SWAP",
+    "ESPORTS_USDT_SWAP",
+    "WLD_USDT_SWAP",
+    "ALLO_USDT_SWAP",
+    "BEAT_USDT_SWAP",
+    "H_USDT_SWAP",
+    "PORTAL_USDT_SWAP",
+    "SKYAI_USDT_SWAP",
+    "JCT_USDT_SWAP",
+    "XPL_USDT_SWAP",
+    "OPG_USDT_SWAP",
+    "BLESS_USDT_SWAP",
+    "PIPPIN_USDT_SWAP"
+  ],
+  "description": "",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "side",
+          "value": "short"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.78
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "horizon",
+          "value": [
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            95,
+            100,
+            105,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            50,
+            45
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 68,
+    "winrate_pct": 75,
+    "avg_net_pct": 0.715,
+    "total_usd": 7.3,
+    "usd_per_day": 1.46,
+    "max_concurrent": 34
+  }
+}

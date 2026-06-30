@@ -1,0 +1,31 @@
+{
+  "purpose": "survivorship-fix for the 365d train set - TRAIN-ONLY, never trade",
+  "criteria": "USDT perp, TRADING, onboard>=395d ago, 24h vol $1-10M, excluded from liquid175",
+  "symbols": [
+    "AERGOUSDT",
+    "STRKUSDT",
+    "PYTHUSDT",
+    "COMPUSDT",
+    "LDOUSDT",
+    "ETHFIUSDT",
+    "GALAUSDT",
+    "SUSDT",
+    "KASUSDT",
+    "HYPERUSDT",
+    "APEUSDT",
+    "SANDUSDT",
+    "FORMUSDT",
+    "1000FLOKIUSDT",
+    "NEIROUSDT",
+    "SPXUSDT",
+    "PARTIUSDT",
+    "NFPUSDT",
+    "GRASSUSDT",
+    "AXSUSDT",
+    "DOGSUSDT",
+    "MEUSDT",
+    "ZENUSDT",
+    "WUSDT",
+    "NILUSDT"
+  ]
+}

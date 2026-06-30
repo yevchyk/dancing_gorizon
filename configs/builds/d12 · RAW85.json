@@ -1,0 +1,37 @@
+{
+  "name": "d12 · RAW85",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d12",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "p_dir>=0.85 — якісніший хвіст · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.85
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 206,
+    "winrate_pct": 52.4,
+    "avg_net_pct": -0.594,
+    "total_usd": -18.35,
+    "usd_per_day": -1.53,
+    "max_concurrent": 20
+  }
+}

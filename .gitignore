@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+#  Dancing Horizon — .gitignore
+#  Public repo. Ship the CODE, not the 46 GB of candles/models
+#  and absolutely not the live API keys.
+# ─────────────────────────────────────────────────────────────
+
+# === SECRETS — never, ever ===
+.env
+.env.*
+*.key
+*.pem
+
+# === Python ===
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# === Editor / OS / agent local ===
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Logs & scratch ===
+*.log
+_tmp_*.py
+_*.ps1
+_rebuild_now.log
+
+# === HEAVY ARTIFACTS (not in git — see README "Data & models") ===
+/data/*
+/models/*
+/outputs/
+/reports/sim_explorer/
+/reports/by_date/
+
+# …but DO ship a tiny runnable sample so the quickstart works
+!/data/binance_smoke/
+!/data/binance_smoke/**
+!/models/hc_exec_to20260604_prod/
+!/models/hc_exec_to20260604_prod/**

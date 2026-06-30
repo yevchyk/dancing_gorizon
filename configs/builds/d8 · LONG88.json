@@ -1,0 +1,45 @@
+{
+  "name": "d8 · LONG88",
+  "folder": "🔥 макс-оборот",
+  "sim": "binance d8",
+  "mode": "book",
+  "notional": 15.0,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": false,
+  "sizing": null,
+  "book": {
+    "max_concurrent": 20,
+    "top_per_scan": 15,
+    "cooldown_min": 20
+  },
+  "banned": [],
+  "description": "лише лонги, p_dir>=0.88 — вища планка · авто-генерований макс-оборот білд",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "side",
+          "value": "long"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "p_dir",
+          "value": 0.88
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 2,
+    "winrate_pct": 100.0,
+    "avg_net_pct": 1.446,
+    "total_usd": 0.43,
+    "usd_per_day": 0.04,
+    "max_concurrent": 2
+  }
+}

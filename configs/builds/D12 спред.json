@@ -1,0 +1,63 @@
+{
+  "name": "D12 спред",
+  "folder": "nice",
+  "sim": "binance d12 (probe)",
+  "mode": "book",
+  "notional": 15,
+  "floor": 0.55,
+  "period": null,
+  "reverse": false,
+  "one_pos": true,
+  "book": {
+    "max_concurrent": 12,
+    "top_per_scan": 10,
+    "cooldown_min": 30
+  },
+  "banned": [
+    "ALLO_USDT_SWAP",
+    "CLO_USDT_SWAP",
+    "BANK_USDT_SWAP",
+    "BEAT_USDT_SWAP",
+    "VELVET_USDT_SWAP",
+    "BSB_USDT_SWAP",
+    "MAGMA_USDT_SWAP"
+  ],
+  "description": "",
+  "levels": [
+    {
+      "conditions": [
+        {
+          "regulator": "spread",
+          "value": 0.64
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "regulator": "horizon",
+          "value": [
+            155,
+            160,
+            165,
+            170,
+            175,
+            180,
+            185,
+            190,
+            195,
+            200
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "trades": 53,
+    "winrate_pct": 49.1,
+    "avg_net_pct": 0.691,
+    "total_usd": 5.49,
+    "usd_per_day": 1.1,
+    "max_concurrent": 9
+  }
+}

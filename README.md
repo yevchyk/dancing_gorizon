@@ -39,6 +39,20 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 
 ---
 
+<div align="center">
+
+### The control panel & signal explorer
+
+![Dancing Horizon — control panel and signal explorer](docs/explorer.png)
+
+*Everything computed in the browser over a saved model: live calibration, the A→B honesty
+check (same config on both halves of the period), per-horizon edge, the entry funnel,
+$/day, and the conviction dial — the whole research loop on one page.*
+
+</div>
+
+---
+
 ## Table of contents
 
 - [What is this?](#what-is-this)
